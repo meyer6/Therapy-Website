@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { buttonTemplate, textTemplate } from '../Interfaces/content';
+import { buttonTemplate, textTemplate, contactPage } from '../Interfaces/content';
 import { Router } from '@angular/router';
 
 @Component({
@@ -20,7 +20,7 @@ export class TextItemComponent {
 
 	// @Input() lastItem: boolean = false;
 
-	@Input() text: Array<textTemplate | buttonTemplate> = [];
+	@Input() text: Array<textTemplate | buttonTemplate | contactPage> = [];
 	hover: boolean = false;
 
 	constructor(private router: Router) {}

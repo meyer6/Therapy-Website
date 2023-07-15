@@ -1,0 +1,60 @@
+.container {
+    width: 100%;
+    font-size: 15px;
+}
+.container p{
+    margin-bottom: 7px;
+}
+
+.inner-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13.5px;
+}
+.inner-inner-container {
+    width: 47%;
+    display: block;
+}
+.inner-inner-container p {
+    margin-bottom: 3px;
+    margin-top: 2px;
+}
+
+.input {
+    width: 100%;
+    border: solid 1px rgb(169, 169, 169);
+    border-radius: 0px;
+    height: 24px;
+    padding: 10px;
+    font-size: 17px;
+    background: rgb(250, 250, 250);
+    font-family: inherit;
+}
+.message {
+    height: 88px;
+    resize: none;
+}
+
+.input:focus {
+    outline: none;
+    height: 22px;
+    width: calc(100% - 2px);
+    border: solid 2px rgb(28, 28, 28);
+}
+.message:focus {
+    height: 86px;
+}
+
+.button {
+    margin-top: 10px;
+    border: solid 1px rgb(28, 28, 28);
+    background: rgb(250, 250, 250);
+    padding: 10px 16px 9px 16px ; 
+    width: fit-content;
+    text-transform: uppercase;
+}
+.button:hover {
+    background: rgb(28, 28, 28);
+    color: white;
+}

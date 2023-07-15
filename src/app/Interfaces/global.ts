@@ -330,5 +330,33 @@ export const site: Array<pageTemplate> = [
                 text3: []
             }
         ]
+    },
+    {
+        url: 'Contact',
+        modules: [
+            {
+                type: 'module3b',
+                backgroundColour: colours.background2,
+                text1:[],
+                text2:[{
+                        type: 'text',
+                        content: 'I\'m Elyssa, a qualified Mindset Coach & certified Hypnotherapist.',
+                        fontFamily: fonts.font1,
+                        fontColour: colours.font2,
+                        fontSize: 30,
+                        fontWeight: 'normal',
+                        lineHeight: 'normal'
+                    },{
+                        type: 'text',
+                        content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.',
+                        fontFamily: fonts.font2,
+                        fontColour: colours.font3,
+                        fontSize: 16,
+                        fontWeight: 'normal',
+                        lineHeight: 27
+                },],
+                text3: [{type: 'contact'}]
+            }
+        ]
     }
 ]

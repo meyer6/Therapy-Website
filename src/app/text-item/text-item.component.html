@@ -36,5 +36,14 @@
             {{ item.content }}
         </div>
     </div>
+
+    <div 
+        *ngIf="item.type == 'contact'"
+        [ngStyle]="{
+            'margin-bottom': i == text.length -1 ? '0px' : '30px',
+        }"
+    >
+        <app-contact></app-contact>
+    </div>    
 </div>
 

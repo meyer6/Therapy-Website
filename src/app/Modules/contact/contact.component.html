@@ -1,0 +1,34 @@
+<div 
+    class="container"
+    [ngStyle]="{
+        'color': colours.font3,
+        'font-family': fonts.font2,
+    }"
+>
+    <form>
+        <p>Name</p>
+        <div class="inner-container">
+            <div class="inner-inner-container">
+                <p>First Name</p>
+                <input class="input" required>
+            </div>
+            <div class="inner-inner-container">
+                <p>Last Name</p>
+                <input class="input" required>
+            </div>
+        </div>
+
+        <p>Email</p>
+        <input class="input" type="email" required>
+
+        <p>Message</p>
+        <textarea class="input message"></textarea>
+
+        <button type="submit"
+            [ngStyle]="{'font-family': fonts.font3}"
+            class="button"
+        >
+            Send
+        </button>
+    </form>
+</div>
