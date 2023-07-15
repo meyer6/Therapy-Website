@@ -1,0 +1,13 @@
+<div 
+    class="container"
+    [ngStyle]="{'background': module.backgroundColour}"
+>
+
+    <div class="text-container" #textContainer2a>
+        <app-text-item [text]="module.text"></app-text-item>
+    </div>
+
+    <div class="img-container" [style.height.px]="textContainer2a.offsetHeight">
+        <img [src]="module.imgURL" class="img">
+    </div>
+</div>

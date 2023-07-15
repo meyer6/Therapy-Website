@@ -1,0 +1,15 @@
+<div 
+    class="container"
+    [ngStyle]="{
+        'background': module.backgroundColour,
+        'height': textContainer1b.offsetHeight.toString() +'px'
+    }"
+>
+    <div class="text-container" #textContainer1b>
+        <app-text-item [text]="module.text"></app-text-item>
+    </div>    
+    
+    <div class="img-container">
+        <img [src]="module.imgURL" class="img">
+    </div>
+</div>

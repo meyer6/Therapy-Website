@@ -1,0 +1,29 @@
+
+<div 
+    class="container"
+    [ngStyle]="{'background': module.backgroundColour}"
+>
+
+    <div 
+        *ngIf="module.type == 'module3a' || module.type == 'module3c' || module.type == 'module3d'" 
+        class="text-container"
+        [ngStyle]="module.type == 'module3d' ? {'text-align': 'center'} : {'text-align': 'auto'} "
+    >
+        <div class="text-container1-inner">
+            <app-text-item [text]="module.text1"></app-text-item>
+        </div>        
+
+    </div>
+
+    <div 
+        *ngIf="module.type == 'module3a' || module.type == 'module3b'" 
+        class="text-container"
+    >        <div class="text-container2-inner">
+            <app-text-item [text]="module.text2"></app-text-item>
+        </div>
+
+        <div class="text-container2-inner">
+            <app-text-item [text]="module.text3"></app-text-item>
+        </div>
+    </div>
+</div>

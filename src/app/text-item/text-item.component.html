@@ -1,0 +1,40 @@
+
+<div *ngFor="let item of text, let i = index">
+    <div *ngIf="item.type == 'text'">
+            <div 
+            [ngStyle]="{
+                'font-size': item.fontSize.toString() + 'px',
+                'font-family': item.fontFamily,
+                'font-weight': item.fontWeight,
+                'line-height': item.lineHeight.toString() + 'px',
+                'letter-spacing': '2em;',
+                'color': item.fontColour,
+                'margin-bottom': i == text.length -1 ? '0px' : '30px',
+            }"
+            [innerHTML]="item.content"
+        ></div>    
+    </div>
+
+    <div *ngIf="item.type == 'button'">
+        <div 
+            class="button"
+            (mouseover)="hover=true" (mouseleave)="hover=false"
+            (click)="navigate(item.redirectURL)"
+            [ngStyle]="hover ? {
+                    'border-color': item.colour, 
+                    'color': '#FFFFFF', 
+                    'background': item.colour, 
+                    'font-family': item.fontFamily,
+                    'margin-bottom': i == text.length - 1 ? '0px' : '30px'
+                }:{
+                    'border-color': item.colour, 
+                    'color': item.colour, 
+                    'font-family': item.fontFamily,
+                    'margin-bottom': i == text.length - 1 ? '0px' : '30px'
+                }"
+        >
+            {{ item.content }}
+        </div>
+    </div>
+</div>
+

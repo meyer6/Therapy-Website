@@ -1,0 +1,42 @@
+<div 
+    class="container"
+    [ngStyle]="{
+        'background': module.backgroundColour,
+        'height': textContainer1a.offsetHeight.toString() +'px'
+    }"
+>
+    <div class="img-container">
+        <img [src]="module.imgURL" class="img">
+    </div>
+
+    <div class="text-container" #textContainer1a>
+        <app-text-item [text]="module.text"></app-text-item>
+
+        <!-- <div *ngFor="let item of module.text, let i = index">
+            <div *ngIf="item.type == 'text'">
+                <app-text-item [item]="item" [lastItem]="i == module.text.length - 1"></app-text-item>
+            </div>
+        </div> -->
+
+        <!-- <div
+            class="heading"
+            [ngStyle]="{'font-family': fonts.font1, 'color': colours.font1}"
+        >
+            {{ heading }}
+        </div>
+
+        <div
+            class="sub-heading"
+            [ngStyle]="{'font-family': fonts.font1, 'color': colours.font1}"
+        >
+            {{ subHeading }}
+        </div>
+
+        <div
+            class="content"
+            [ngStyle]="{'font-family': fonts.font2}"
+            [innerHTML]="content"
+        ></div> -->
+    </div>
+</div>
+hello

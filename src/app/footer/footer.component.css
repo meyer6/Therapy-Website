@@ -1,0 +1,39 @@
+.container {
+    width: 100%;
+    height: 240px;
+    padding-top: 60px;
+    cursor: pointer
+}
+.container div, a{
+    display: flex;
+    justify-content: center;
+}
+
+.links-container {
+    letter-spacing: 0.007cm;
+    margin-bottom: 25px;
+}
+
+.footer-links {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.email {
+    font-size: 15px;
+    letter-spacing: 0.007cm;
+    margin-bottom: 10px;
+}
+.email:link { text-decoration: none; }
+.email:visited { text-decoration: none; }
+.email:hover { text-decoration: none; }
+.email:active { text-decoration: none; }
+
+.socialButtons {
+    font-size: 21px;
+}
+.socialButtons i:not(:last-child) {
+    margin-right: 10px;
+}

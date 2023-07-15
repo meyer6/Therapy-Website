@@ -1,0 +1,25 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+
+
+/* .heading {
+    line-height: 86px;
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.sub-heading {
+    line-height: 48px;
+    font-size: 39px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.content {
+    line-height: 27px;
+    font-size: 16px;
+    letter-spacing: -0.01cm;
+} */

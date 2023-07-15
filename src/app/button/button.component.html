@@ -1,0 +1,8 @@
+<div 
+    class="button"
+    (mouseover)="hover=true" (mouseleave)="hover=false"
+    [ngStyle]="hover ? {'border-color': colour, 'color': '#FFFFFF', 'background': colour, 'font-family': fonts.font3}:
+        {'border-color': colour, 'color': colour, 'font-family': fonts.font3}"
+>
+    {{ content }}
+</div>
