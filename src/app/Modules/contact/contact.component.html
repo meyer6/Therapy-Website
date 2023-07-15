@@ -5,24 +5,25 @@
         'font-family': fonts.font2,
     }"
 >
-    <form>
+    <!-- endpoint space -->
+    <form action="https://data.endpoint.space/clk4f7nwx000008jvvt4yy18q" method="POST">
         <p>Name</p>
         <div class="inner-container">
             <div class="inner-inner-container">
                 <p>First Name</p>
-                <input class="input" required>
+                <input class="input" required name="First Name">
             </div>
             <div class="inner-inner-container">
                 <p>Last Name</p>
-                <input class="input" required>
+                <input class="input" required name="Last Name">
             </div>
         </div>
 
         <p>Email</p>
-        <input class="input" type="email" required>
+        <input class="input" type="email" required name="Email">
 
         <p>Message</p>
-        <textarea class="input message"></textarea>
+        <textarea class="input message" name="Message"></textarea>
 
         <button type="submit"
             [ngStyle]="{'font-family': fonts.font3}"
