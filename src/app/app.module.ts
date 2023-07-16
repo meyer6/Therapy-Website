@@ -8,7 +8,7 @@ import { NavbarComponent } from './Modules/navbar/navbar.component';
 import { Module1aComponent } from './Modules/module1a/module1a.component';
 import { Module2aComponent } from './Modules/module2a/module2a.component';
 import { Module3Component } from './Modules/module3/module3.component';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './Modules/footer/footer.component';
 import { TextItemComponent } from './text-item/text-item.component';
 import { Module2bComponent } from './Modules/module2b/module2b.component';
 import { Module1bComponent } from './Modules/module1b/module1b.component';

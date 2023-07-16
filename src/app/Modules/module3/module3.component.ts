@@ -14,4 +14,12 @@ export class Module3Component {
 		text2: [],
 		text3: [],
 	};
+	
+	width: number = window.innerWidth
+
+	ngOnInit(){
+		window.addEventListener('resize', () => {
+			this.width = window.innerWidth
+		})
+	}
 }

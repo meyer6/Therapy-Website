@@ -2,16 +2,20 @@
     width: 100%;
     height: 240px;
     padding-top: 60px;
-    cursor: pointer
+    cursor: pointer;
+    text-align: center;
 }
 .container div, a{
-    display: flex;
+    display: block;
     justify-content: center;
 }
 
 .links-container {
     letter-spacing: 0.007cm;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+}
+.links-container div {
+    margin-bottom: 10px;
 }
 
 .footer-links {

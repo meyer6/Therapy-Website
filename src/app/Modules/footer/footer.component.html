@@ -1,11 +1,14 @@
 <div 
     class="container"
-    [ngStyle]="{'background': colours.background1}"
+    [ngStyle]="{
+        'background': colours.background1,
+    }"
 >
     <div 
         class="links-container"
         [ngStyle]="{'font-family': fonts.font3,
-            'color': colours.font2
+            'color': colours.font2,
+            'display': width < 800 ? 'block' : 'flex'
         }"
     >
         <div (click)="navigate('AboutMe')" class="footer-links">About Me</div>
