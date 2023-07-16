@@ -10,30 +10,45 @@
         [src]="logoUrl" 
         class="logo"
     >
-        <nav>
-            <i class="fa fa-bars" (click)="open = true"></i>
 
-            <div 
-                class="links" id="links"
+    <nav>
+        <i 
+            class="fa fa-bars" 
+            (click)="open = true"
+            [ngStyle]="{
+                'color': colours.font1, 
+                'margin-right': '40px'
+            }"
+        ></i>
+
+        <div 
+            class="links"
+            [ngStyle]="{
+                'background': open ? colours.background1 : 'inherit',
+                'color': colours.font1, 
+                'font-family': fonts.font2,
+                'right': open ? '0' : '-250px'
+            }"
+        >
+            <i 
+                class="fa fa-close" 
                 [ngStyle]="{
                     'color': colours.font1, 
-                    'font-family': fonts.font2,
-                    'right': open ? '0' : '-250px'
+                    'margin-right': '40px'
                 }"
-            >
-                <i class="fa fa-bars" (click)="open = false" ></i>
-                
-                <div (click)="navigate('AboutMe')">About Me</div>
-                <div (click)="navigate('Work-With-Me')">Work With Me</div>
-                <div (click)="navigate('Testimonials')">Testimonials</div>
-                <div (click)="navigate('Blog')">Blog</div>
-                <div (click)="navigate('Contact')">Contact</div>
+                (click)="open = false" 
+            ></i>
 
-                <i (click)="navigate(socialUrls.instagram)" class="fa fa-instagram icon"></i>
-                <i (click)="navigate(socialUrls.linkedin)" class="fa fa-linkedin icon"></i>
+            <div (click)="navigate('AboutMe')">About Me</div>
+            <div (click)="navigate('Work-With-Me')">Work With Me</div>
+            <div (click)="navigate('Testimonials')">Testimonials</div>
+            <div (click)="navigate('Blog')">Blog</div>
+            <div (click)="navigate('Contact')">Contact</div>
 
-            </div>
-        </nav>
+            <i (click)="navigate(socialUrls.instagram)" class="fa fa-instagram icon"></i>
+            <i (click)="navigate(socialUrls.linkedin)" class="fa fa-linkedin icon icon2"></i>
+        </div>
+    </nav>
 
 </div>
 
