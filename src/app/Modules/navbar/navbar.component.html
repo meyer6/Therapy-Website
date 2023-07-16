@@ -10,6 +10,45 @@
         [src]="logoUrl" 
         class="logo"
     >
+        <nav>
+            <i class="fa fa-bars" (click)="open = true"></i>
+
+            <div 
+                class="links" id="links"
+                [ngStyle]="{
+                    'color': colours.font1, 
+                    'font-family': fonts.font2,
+                    'right': open ? '0' : '-250px'
+                }"
+            >
+                <i class="fa fa-bars" (click)="open = false" ></i>
+                
+                <div (click)="navigate('AboutMe')">About Me</div>
+                <div (click)="navigate('Work-With-Me')">Work With Me</div>
+                <div (click)="navigate('Testimonials')">Testimonials</div>
+                <div (click)="navigate('Blog')">Blog</div>
+                <div (click)="navigate('Contact')">Contact</div>
+
+                <i (click)="navigate(socialUrls.instagram)" class="fa fa-instagram icon"></i>
+                <i (click)="navigate(socialUrls.linkedin)" class="fa fa-linkedin icon"></i>
+
+            </div>
+        </nav>
+
+</div>
+
+<!-- <div 
+    class="navbar-container"
+    [ngStyle]="{'background': 'linear-gradient(180deg, '+colours.background1+' 35%,'+ colours.background2+'00 100%)',
+        'top': position + 'px',
+        'transition': 'top ' + (totalUpScroll == 0 ? '0' : '0.3') + 's'
+    }"
+>
+    <img 
+        (click)="navigate('')"
+        [src]="logoUrl" 
+        class="logo"
+    >
 
     <div 
         class="links"
@@ -28,4 +67,4 @@
         <i (click)="navigate(socialUrls.linkedin)" class="fa fa-linkedin icon"></i>
         
     </div>
-</div>
+</div> -->

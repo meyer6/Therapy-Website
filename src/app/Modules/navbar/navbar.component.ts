@@ -20,6 +20,8 @@ export class NavbarComponent {
 	currentScrollPosition: number = 0
 	totalUpScroll: number = 0
 
+	open: boolean = false;
+
 	constructor(private router: Router) {}
 
 	ngOnInit(){
