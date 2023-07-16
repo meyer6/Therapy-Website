@@ -29,6 +29,10 @@
 			<div *ngIf="module.type == 'module3a' || module.type == 'module3b' || module.type == 'module3c' || module.type == 'module3d'">
 				<app-module3 [module]="module"></app-module3>
 			</div>
+
+			<div *ngIf="module.type == 'imageModule'">
+				<app-image-module [module]="module"></app-image-module>
+			</div>
 		</div>
 	</div>
 </div>

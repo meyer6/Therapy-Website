@@ -15,6 +15,7 @@ import { Module1bComponent } from './Modules/module1b/module1b.component';
 import { LandingModuleComponent } from './Modules/landing-module/landing-module.component';
 import { ContactComponent } from './Modules/contact/contact.component';
 import { Module12MobileComponent } from './Modules/module12-mobile/module12-mobile.component';
+import { ImageModuleComponent } from './Modules/image-module/image-module.component';
 
 @NgModule({
     declarations: [
@@ -30,6 +31,7 @@ import { Module12MobileComponent } from './Modules/module12-mobile/module12-mobi
         LandingModuleComponent,
         ContactComponent,
         Module12MobileComponent,
+        ImageModuleComponent,
     ],
     imports: [
         BrowserModule,

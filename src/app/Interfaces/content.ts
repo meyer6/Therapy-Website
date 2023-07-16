@@ -4,7 +4,7 @@ export interface pageTemplate {
 }
 
 export interface module12Template {
-    type: 'module1a' | 'module1b' | 'module2a' | 'module2b';
+    type: 'module1a' | 'module1b' | 'module2a' | 'module2b' | 'imageModule';
     backgroundColour: string;
     imgURL: string;
     text: Array<textTemplate | buttonTemplate | contactPage>

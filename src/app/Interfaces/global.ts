@@ -258,6 +258,16 @@ export const site: Array<pageTemplate> = [
                 text2:[],
                 text3:[]
             },
+            {
+                type: 'imageModule',
+                backgroundColour: colours.background1,
+                imgURL: 'assets/Img1.jpg',
+                text: [
+                    {...heading2, ...{content: 'Hello!'}},
+                    {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
+                    {...button, ...{content: 'Contact Me', redirectURL: 'Contact'}},
+                ]
+            }
         ]
     },
     {
