@@ -1,6 +1,7 @@
 <div 
     class="container"
     [ngStyle]="{'background': module.backgroundColour}"
+    *ngIf="windowService.windowWidth >= windowService.minWidth"
 >
 
     <div class="text-container" #textContainer2a>
@@ -11,3 +12,5 @@
         <img [src]="module.imgURL" class="img">
     </div>
 </div>
+
+<app-module12-mobile [module]="module"></app-module12-mobile>

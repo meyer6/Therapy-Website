@@ -8,7 +8,7 @@
         class="links-container"
         [ngStyle]="{'font-family': fonts.font3,
             'color': colours.font2,
-            'display': width < 800 ? 'block' : 'flex'
+            'display': windowService.windowWidth < windowService.minWidth ? 'block' : 'flex'
         }"
     >
         <div (click)="navigate('AboutMe')" class="footer-links">About Me</div>

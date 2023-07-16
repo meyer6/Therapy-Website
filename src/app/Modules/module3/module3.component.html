@@ -5,18 +5,34 @@
 >
 
     <div 
-        *ngIf="module.type == 'module3a' || module.type == 'module3c' || module.type == 'module3d'" 
+        *ngIf="
+            module.type == 'module3a' || 
+            module.type == 'module3c' || 
+            module.type == 'module3d' || 
+            windowService.windowWidth < windowService.minWidth
+        "
         class="text-container"
         [ngStyle]="module.type == 'module3d' ? {'text-align': 'center'} : {'text-align': 'auto'} "
     >
-        <div class="text-container1-inner">
+        <div 
+            class="text-container1-inner" 
+            *ngIf="windowService.windowWidth >= windowService.minWidth">
             <app-text-item [text]="module.text1"></app-text-item>
         </div>        
 
+        <div 
+            class="text-container1-inner" 
+            *ngIf="windowService.windowWidth < windowService.minWidth"
+        >
+            <app-text-item [text]="module.text1.concat(module.text2, module.text3)"></app-text-item>
+        </div> 
     </div>
 
     <div 
-        *ngIf="module.type == 'module3a' || module.type == 'module3b'" 
+        *ngIf="
+            (module.type == 'module3a' || module.type == 'module3b') && 
+            windowService.windowWidth >= windowService.minWidth
+        " 
         class="text-container"
     >        <div class="text-container2-inner">
             <app-text-item [text]="module.text2"></app-text-item>

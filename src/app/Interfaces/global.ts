@@ -204,62 +204,63 @@ export const home: pageTemplate = {
 }
 
 export const site: Array<pageTemplate> = [  
-    {
-        url: '',
-        modules: [
-            {
-                type: 'landingModule',
-                backgroundImg: 'https://images.squarespace-cdn.com/content/v1/5ed4e58c2bc5dc1defd26236/619dfb47-2b41-4dd5-a797-cda9eb213175/Elyssa-Desai-Coaching-Homepage.jpg',
-                text: [{...heading1, ...{content: 'Elyssa Desai'}},
-                    {...thinText, ...{content: 'COACHING'}}
-                ]
-            },
-            {
-                type: 'module3c',
-                backgroundColour: colours.background1,
-                text1: [
-                    {...heading2, ...{content: 'Hello!'}},
-                    {...heading3, ...{content: 'I\'m Elyssa, a qualified Mindset Coach & certified Hypnotherapist.'}},
-                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
-                    {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
-                ],
-                text2:[],
-                text3:[]
-            },
-            {
-                type: 'module1b',
-                backgroundColour: colours.background2,
-                imgURL: 'assets/Img1.jpg',
-                text: [
-                    {...heading2, ...{content: 'Hello!'}},
-                    {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
-                    {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
-                ]
-            },
-            {
-                type: 'module1a',
-                backgroundColour: colours.background1,
-                imgURL: 'assets/Img1.jpg',
-                text: [
-                    {...heading2, ...{content: 'Hello!'}},
-                    {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
-                    {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
-                ]
-            },
-            {
-                type: 'module3c',
-                backgroundColour: colours.background2,
-                text1: [
-                    {...heading2, ...{content: 'Hello!'}},
-                    {...heading3, ...{content: 'I\'m Elyssa, a qualified Mindset Coach & certified Hypnotherapist.'}},
-                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
-                    {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
-                ],
-                text2:[],
-                text3:[]
-            },
-        ]
-    },
+    // {
+    //     url: '',
+    //     modules: [
+    //         {
+    //             type: 'landingModule',
+    //             backgroundImg: 'https://images.squarespace-cdn.com/content/v1/5ed4e58c2bc5dc1defd26236/619dfb47-2b41-4dd5-a797-cda9eb213175/Elyssa-Desai-Coaching-Homepage.jpg',
+    //             text: [{...heading1, ...{content: 'Elyssa Desai'}},
+    //                 {...thinText, ...{content: 'COACHING'}}
+    //             ]
+    //         },
+    //         {
+    //             type: 'module3c',
+    //             backgroundColour: colours.background1,
+    //             text1: [
+    //                 {...heading2, ...{content: 'Hello!'}},
+    //                 {...heading3, ...{content: 'I\'m Elyssa, a qualified Mindset Coach & certified Hypnotherapist.'}},
+    //                 {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
+    //                 {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
+    //             ],
+    //             text2:[],
+    //             text3:[]
+    //         },
+    //         {
+    //             type: 'module1b',
+    //             backgroundColour: colours.background2,
+    //             imgURL: 'assets/Img1.jpg',
+    //             text: [
+    //                 {...heading2, ...{content: 'Hello!'}},
+    //                 {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
+    //                 {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
+    //             ]
+    //         },
+    //         {
+    //             type: 'module1a',
+    //             backgroundColour: colours.background1,
+    //             imgURL: 'assets/Img1.jpg',
+    //             text: [
+    //                 {...heading2, ...{content: 'Hello!'}},
+    //                 {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
+    //                 {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
+    //             ]
+    //         },
+    //         {
+    //             type: 'module3c',
+    //             backgroundColour: colours.background2,
+    //             text1: [
+    //                 {...heading2, ...{content: 'Hello!'}},
+    //                 {...heading3, ...{content: 'I\'m Elyssa, a qualified Mindset Coach & certified Hypnotherapist.'}},
+    //                 {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
+    //                 {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
+    //             ],
+    //             text2:[],
+    //             text3:[]
+    //         },
+    //     ]
+    // },
+    home,
     {
         url: 'AboutMe',
         modules: [

@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { module12Template } from 'src/app/Interfaces/content';
+import { WindowWidthService } from '../window-width.service';
 
 @Component({
     selector: 'app-module1a',
@@ -13,5 +14,7 @@ export class Module1aComponent {
 		imgURL: '',
 		text: []
 	};
+
+	constructor(public windowService: WindowWidthService) {}
 }
  

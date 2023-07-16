@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { module3Template } from 'src/app/Interfaces/content';
+import { WindowWidthService } from '../window-width.service';
 
 @Component({
     selector: 'app-module3',
@@ -14,12 +15,6 @@ export class Module3Component {
 		text2: [],
 		text3: [],
 	};
-	
-	width: number = window.innerWidth
 
-	ngOnInit(){
-		window.addEventListener('resize', () => {
-			this.width = window.innerWidth
-		})
-	}
+	constructor(public windowService: WindowWidthService) {}
 }

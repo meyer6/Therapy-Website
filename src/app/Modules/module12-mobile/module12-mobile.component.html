@@ -1,0 +1,23 @@
+<div 
+    class="container"
+    *ngIf="windowService.windowWidth < windowService.minWidth"
+    [ngStyle]="{
+        'background': module.backgroundColour,
+        'display': 'block' 
+    }"
+>
+    <div [ngStyle]="{'width': '85%', 'margin-left': '7.5%'}">
+        <img [src]="module.imgURL" class="img">
+    </div>
+
+    <div 
+        class="text-container"
+        [ngStyle]="{
+            'width': '85%', 
+            'margin-left': '7.5%', 
+            'padding-bottom': '0'
+        }"
+    >
+        <app-text-item [text]="module.text"></app-text-item>
+    </div>
+</div>

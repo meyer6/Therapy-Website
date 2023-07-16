@@ -4,6 +4,7 @@ import { fontsTemplate } from '../../Interfaces/fonts';
 import { colours, email, fonts, socialUrls } from '../../Interfaces/global';
 import { Router } from '@angular/router';
 import { socialUrlsTemplate } from '../../Interfaces/socialUrls';
+import { WindowWidthService } from '../window-width.service';
 
 @Component({
     selector: 'app-footer',
@@ -16,15 +17,9 @@ export class FooterComponent {
 	email: string = email
 	socialUrls: socialUrlsTemplate = socialUrls;
 
-	width: number = window.innerWidth
+	constructor(private router: Router, public windowService: WindowWidthService) {}
 
-	constructor(private router: Router) {}
 
-	ngOnInit(){
-		window.addEventListener('resize', () => {
-			this.width = window.innerWidth
-		})
-	}
     navigate(route: string) {
 		if(route.slice(0, 4) == 'http'){
   			window.open(route, '_blank');
