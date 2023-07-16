@@ -13,7 +13,10 @@
 
     <div 
         class="links"
-        [ngStyle]="{'color': colours.font1, 'font-family': fonts.font2}"
+        [ngStyle]="{
+            'color': colours.font1, 
+            'font-family': fonts.font2
+        }"
     >
         <div (click)="navigate('AboutMe')">About Me</div>
         <div (click)="navigate('Work-With-Me')">Work With Me</div>

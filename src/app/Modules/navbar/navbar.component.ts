@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { colours, fonts, logoUrl, socialUrls } from '../Interfaces/global';
-import { colourTemplate } from '../Interfaces/colours';
-import { fontsTemplate } from '../Interfaces/fonts';
+import { colours, fonts, logoUrl, socialUrls } from '../../Interfaces/global';
+import { colourTemplate } from '../../Interfaces/colours';
+import { fontsTemplate } from '../../Interfaces/fonts';
 import { Router } from '@angular/router';
-import { socialUrlsTemplate } from '../Interfaces/socialUrls';
+import { socialUrlsTemplate } from '../../Interfaces/socialUrls';
 
 @Component({
     selector: 'app-navbar',

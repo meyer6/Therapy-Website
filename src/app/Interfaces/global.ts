@@ -4,10 +4,10 @@ import { fontsTemplate } from './fonts';
 import { socialUrlsTemplate } from './socialUrls';
 
 export const colours: colourTemplate = {
-    background1: "#F4EEE9",
+    background1: "#e4ebeb", //"#F4EEE9"
     background2: "#FFFEFB",
-    font1: "#A4381D",
-    font2: "#EB6949",
+    font1: "#2c5194", //375CA0 //A4381D
+    font2: "#967253", //EB6E80 //EB6949
     font3: "#000000",
 };
 
@@ -15,7 +15,7 @@ export const logoUrl: string = "assets/Logo.png"
 
 // Note that the font must be linked in index.html
 export const fonts: fontsTemplate = {
-    font1: "Playfair Display",
+    font1: "Merriweather", //Playfair Display
     font2: "Montserrat",
     font3: "Raleway"
 };

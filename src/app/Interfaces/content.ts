@@ -19,7 +19,7 @@ export interface module3Template {
 export interface landingModuleTemplate {
     type: 'landingModule';
     backgroundImg: string;
-    text: Array<textTemplate | buttonTemplate | contactPage>;
+    text: Array<textTemplate | buttonTemplate>;
 }
 // more modules
 

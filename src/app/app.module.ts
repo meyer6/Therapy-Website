@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from './Modules/navbar/navbar.component';
 import { Module1aComponent } from './Modules/module1a/module1a.component';
 import { Module2aComponent } from './Modules/module2a/module2a.component';
 import { Module3Component } from './Modules/module3/module3.component';
