@@ -3,6 +3,14 @@
     width: 100%;
 }
 
+.read-more {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px;
+}
 /* .container {
     width: 100%;
     display: flex;

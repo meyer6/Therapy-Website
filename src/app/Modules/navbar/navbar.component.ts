@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { colours, fonts, logoUrl, socialUrls } from '../../Interfaces/global';
-import { colourTemplate } from '../../Interfaces/colours';
-import { fontsTemplate } from '../../Interfaces/fonts';
+import { logoUrl, socialUrls } from '../../Interfaces/global';
+import { colours, colourTemplate } from '../../Interfaces/colours';
+import { fonts, fontsTemplate } from '../../Interfaces/fonts';
 import { Router } from '@angular/router';
 import { socialUrlsTemplate } from '../../Interfaces/socialUrls';
 
@@ -54,6 +54,7 @@ export class NavbarComponent {
 		if(route.slice(0, 4) == 'http'){
   			window.open(route, '_blank');
 		}else{
+			this.open = false;
 			this.router.navigate(['/' + route]); 
 		}
 	}

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { colourTemplate } from '../../Interfaces/colours';
-import { fontsTemplate } from '../../Interfaces/fonts';
-import { colours, email, fonts, socialUrls } from '../../Interfaces/global';
+import { colours, colourTemplate } from '../../Interfaces/colours';
+import { fonts, fontsTemplate } from '../../Interfaces/fonts';
+import { email, socialUrls } from '../../Interfaces/global';
 import { Router } from '@angular/router';
 import { socialUrlsTemplate } from '../../Interfaces/socialUrls';
 import { WindowWidthService } from '../window-width.service';

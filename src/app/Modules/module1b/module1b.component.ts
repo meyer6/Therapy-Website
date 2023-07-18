@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { module12Template } from 'src/app/Interfaces/content';
+import { imageAndTextModule } from 'src/app/Interfaces/content';
 import { WindowWidthService } from '../window-width.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { WindowWidthService } from '../window-width.service';
     styleUrls: ['./module1b.component.css', '../styles/module1.css']
 })
 export class Module1bComponent {
-	@Input() module: module12Template = {
+	@Input() module: imageAndTextModule = {
 		type: 'module1a',
 		backgroundColour: '',
 		imgURL: '',

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { module12Template } from 'src/app/Interfaces/content';
+import { imageAndTextModule } from 'src/app/Interfaces/content';
 
 @Component({
     selector: 'app-image-module',
@@ -7,7 +7,7 @@ import { module12Template } from 'src/app/Interfaces/content';
     styleUrls: ['./image-module.component.css']
 })
 export class ImageModuleComponent {
-	@Input() module: module12Template = {
+	@Input() module: imageAndTextModule = {
         type: 'module1a',
         backgroundColour: '',
         imgURL: '',

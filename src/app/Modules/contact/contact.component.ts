@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { fontsTemplate } from 'src/app/Interfaces/fonts';
-import { colourTemplate } from 'src/app/Interfaces/colours';
-import { fonts, colours } from 'src/app/Interfaces/global';
+import { fonts, fontsTemplate } from 'src/app/Interfaces/fonts';
+import { colours, colourTemplate } from 'src/app/Interfaces/colours';
 
 @Component({
     selector: 'app-contact',

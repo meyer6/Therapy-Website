@@ -6,7 +6,7 @@
 			class="nav-bar-placeholder"
 		></div>
 
-		<div *ngFor="let module of page.modules">
+		<div *ngFor="let module of page.modules.slice(0, numOfModules)">
 
 			<div *ngIf="module.type == 'landingModule'">
 				<app-landing-module [module]="module"></app-landing-module>
@@ -34,8 +34,17 @@
 				<app-image-module [module]="module"></app-image-module>
 			</div>
 		</div>
+
+		<div
+			*ngIf="page.modules.length > numOfModules"
+			class="read-more" 
+			[style.font-family]="fonts.font2"
+			[style.color]="colours.font1"
+			(click)="numOfModules = numOfModules + 10"
+		>
+			Read More
+		</div>
 	</div>
 </div>
-
 
 <app-footer></app-footer>

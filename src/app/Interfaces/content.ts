@@ -1,9 +1,9 @@
 export interface pageTemplate {
     url: string;
-    modules: Array<module12Template | module3Template | landingModuleTemplate>
+    modules: Array<imageAndTextModule | module3Template | landingModuleTemplate>
 }
 
-export interface module12Template {
+export interface imageAndTextModule {
     type: 'module1a' | 'module1b' | 'module2a' | 'module2b' | 'imageModule';
     backgroundColour: string;
     imgURL: string;
