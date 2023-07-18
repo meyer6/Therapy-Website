@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { logoUrl, socialUrls } from '../../Interfaces/global';
+import { logoUrl, site, socialUrls } from '../../Interfaces/global';
 import { colours, colourTemplate } from '../../Interfaces/colours';
 import { fonts, fontsTemplate } from '../../Interfaces/fonts';
 import { Router } from '@angular/router';
 import { socialUrlsTemplate } from '../../Interfaces/socialUrls';
+import { pageTemplate } from 'src/app/Interfaces/content';
 
 @Component({
     selector: 'app-navbar',
@@ -21,6 +22,8 @@ export class NavbarComponent {
 	totalUpScroll: number = 0
 
 	open: boolean = false;
+
+	site: Array<pageTemplate> = site
 
 	constructor(private router: Router) {}
 

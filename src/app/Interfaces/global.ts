@@ -81,7 +81,7 @@ export const site: Array<pageTemplate> = [
         ]
     },
     {
-        url: 'AboutMe',
+        url: 'About-Me',
         modules: [
             {
                 type: 'module1a',
@@ -123,6 +123,20 @@ export const site: Array<pageTemplate> = [
         ]
     },
     {
+        url: 'Work-With-Me',
+        modules: [
+            {
+                type: 'module3d',
+                backgroundColour: colours.background1,
+                text1: [
+                    {...heading2, ...{content: 'Hello!'}},
+                ],
+                text2:[],
+                text3: []
+            }
+        ]
+    },
+    {
         url: 'Testimonials',
         modules: [
             {
@@ -153,6 +167,20 @@ export const site: Array<pageTemplate> = [
         })
     },
     ...blogPages,
+    {
+        url: 'Resources',
+        modules: [
+            {
+                type: 'module3d',
+                backgroundColour: colours.background1,
+                text1: [
+                    {...heading2, ...{content: 'Hello!'}},
+                ],
+                text2:[],
+                text3: []
+            }
+        ]
+    },
     {
         url: 'Contact',
         modules: [
