@@ -1,0 +1,34 @@
+<div *ngIf="open" class="blur"></div>
+<div 
+    *ngIf="open"    
+    class="container"
+    [style.background]="colours.background1"
+    [style.font-family]="fonts.font3"
+    [style.color]="colours.font1"
+    
+>
+    <img
+        [style.height]="popUpTextContainer.offsetHeight.toString() +'px'"
+        src="assets/Img2.jpeg" 
+        class="img"
+    >
+
+    <i class="fa fa-close" (click)="open = false"></i>
+
+    <div class="text-container" #popUpTextContainer>
+        <app-text-item [text]="content"></app-text-item>
+
+        <br>
+        <form>
+            <input class="emailInput" placeholder="Email">
+            <button 
+                type="submit"
+                [style.font-family]="fonts.font3"
+                class="submit-button"
+            >
+                Subscribe
+            </button>
+        </form>
+    </div>
+
+</div>

@@ -171,14 +171,14 @@ export const site: Array<pageTemplate> = [
         url: 'Resources',
         modules: [
             {
-                type: 'module3d',
+                type: 'module2a',
                 backgroundColour: colours.background1,
-                text1: [
-                    {...heading2, ...{content: 'Hello!'}},
-                ],
-                text2:[],
-                text3: []
-            }
+                imgURL: 'assets/book.jpg',
+                text: [
+                    {...heading3, ...{content: 'Book'}},
+                    {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fuleive, every testimonial I read, my heart is so full with happiness'}},
+                ]
+            },
         ]
     },
     {

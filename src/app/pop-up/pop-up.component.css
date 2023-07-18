@@ -1,0 +1,72 @@
+.blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(0.75px);
+}
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max(450px, 50%);
+    display: flex;
+    box-shadow: 0 0 14px 3px rgb(179, 179, 179);
+}
+
+.img {
+    width: 40%;
+    object-fit: cover;
+}
+
+i {
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+i:hover{
+    background:rgb(210, 210, 210)
+}
+
+.text-container {
+    height: fit-content;
+    padding: 30px
+}
+
+.emailInput {
+    width: fill;
+    border: solid 1px rgb(169, 169, 169);
+    border-radius: 0px;
+    height: 24px;
+    padding: 10px;
+    font-size: 17px;
+    background: rgb(250, 250, 250);
+    font-family: inherit;
+}
+.emailInput:focus {
+    outline: none;
+    height: 22px;
+    border: solid 2px rgb(28, 28, 28);
+}
+
+.submit-button {
+    width: fill;
+    margin-top: 10px;
+    border: solid 1px rgb(28, 28, 28);
+    background: rgb(250, 250, 250);
+    padding: 10px 16px 9px 16px ; 
+    text-transform: uppercase;
+}
+.submit-button:hover {
+    background: rgb(28, 28, 28);
+    color: white;
+}
