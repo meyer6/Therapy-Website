@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { imageAndTextModule } from 'src/app/Interfaces/content';
+import { imageAndTextModule } from 'src/app/Interfaces/moduleTemplates';
 
 @Component({
     selector: 'app-image-module',

@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { landingModuleTemplate } from 'src/app/Interfaces/content';
 import { WindowWidthService } from '../window-width.service';
+import { landingModule } from 'src/app/Interfaces/moduleTemplates';
 
 @Component({
     selector: 'app-landing-module',
@@ -8,7 +8,7 @@ import { WindowWidthService } from '../window-width.service';
     styleUrls: ['./landing-module.component.css']
 })
 export class LandingModuleComponent {
-	@Input() module: landingModuleTemplate = {
+	@Input() module: landingModule = {
 		type: 'landingModule',
 		backgroundImg: '',
 		text: []

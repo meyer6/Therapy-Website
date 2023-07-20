@@ -1,5 +1,5 @@
-import { imageGridModule } from './../../Interfaces/content';
 import { Component, Input } from '@angular/core';
+import { imageGridModule } from 'src/app/Interfaces/moduleTemplates';
 
 @Component({
     selector: 'app-image-grid',

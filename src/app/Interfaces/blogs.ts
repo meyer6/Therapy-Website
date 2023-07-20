@@ -1,5 +1,5 @@
-import { colours } from "./colours";
-import { buttonTemplate, pageTemplate, textTemplate } from "./content";
+import { pageTemplate } from './pageTemplate';
+import { buttonTemplate, textTemplate } from "./contentTemplates";
 import { heading1, heading2, heading3, normalText, thinText, button } from './textDefaults';
 
 export interface blogTemplate {

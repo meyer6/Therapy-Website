@@ -1,9 +1,10 @@
 import { colours } from './colours';
 import { fonts } from './fonts';
-import { pageTemplate, imageAndTextModule } from './content';
 import { socialUrlsTemplate } from './socialUrls';
 import { heading1, heading2, heading3, normalText, thinText, button } from './textDefaults';
 import { blogPages, blogTemplate, blogs } from './blogs';
+import { pageTemplate } from './pageTemplate';
+import { imageAndTextModule } from './moduleTemplates';
 
 export const logoUrl: string = "assets/Logo.png"
 

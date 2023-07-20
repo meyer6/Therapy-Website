@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { pageTemplate } from './Interfaces/content';
 import { site } from './Interfaces/global';
 import { Location } from "@angular/common";
 import { fonts, fontsTemplate } from './Interfaces/fonts';
 import { colourTemplate, colours } from './Interfaces/colours';
+import { pageTemplate } from './Interfaces/pageTemplate';
 
 @Component({
     selector: 'app-root',

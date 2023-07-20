@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { imageAndTextModule } from 'src/app/Interfaces/content';
 import { WindowWidthService } from '../window-width.service';
+import { imageAndTextModule } from 'src/app/Interfaces/moduleTemplates';
 
 @Component({
     selector: 'app-module12-mobile',

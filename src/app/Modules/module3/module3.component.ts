@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { module3Template } from 'src/app/Interfaces/content';
 import { WindowWidthService } from '../window-width.service';
+import { textModule } from 'src/app/Interfaces/moduleTemplates';
 
 @Component({
     selector: 'app-module3',
@@ -8,7 +8,7 @@ import { WindowWidthService } from '../window-width.service';
     styleUrls: ['./module3.component.css']
 })
 export class Module3Component {
-	@Input() module: module3Template = {
+	@Input() module: textModule = {
 		type: 'module3a',
 		backgroundColour: '',
 		text1: [],

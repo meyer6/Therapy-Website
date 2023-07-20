@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { colourTemplate, colours } from '../Interfaces/colours';
 import { fonts, fontsTemplate } from '../Interfaces/fonts';
-import { buttonTemplate, textTemplate } from '../Interfaces/content';
+import { buttonTemplate, textTemplate } from '../Interfaces/contentTemplates';
 import { heading2, normalText } from '../Interfaces/textDefaults';
 
 @Component({

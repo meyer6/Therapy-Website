@@ -1,0 +1,6 @@
+import { imageAndTextModule, imageGridModule, landingModule, textModule } from "./moduleTemplates";
+
+export interface pageTemplate {
+    url: string;
+    modules: Array<imageAndTextModule | textModule | imageGridModule | landingModule>
+}

@@ -1,4 +1,4 @@
-import { buttonTemplate, textTemplate } from "./content"
+import { buttonTemplate, textTemplate } from "./contentTemplates"
 import { fonts } from "./fonts"
 import { colours } from './colours';
 

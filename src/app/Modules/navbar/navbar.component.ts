@@ -5,7 +5,7 @@ import { colours, colourTemplate } from '../../Interfaces/colours';
 import { fonts, fontsTemplate } from '../../Interfaces/fonts';
 import { Router } from '@angular/router';
 import { socialUrlsTemplate } from '../../Interfaces/socialUrls';
-import { pageTemplate } from 'src/app/Interfaces/content';
+import { pageTemplate } from 'src/app/Interfaces/pageTemplate';
 
 @Component({
     selector: 'app-navbar',

@@ -5,7 +5,7 @@ import { email, site, socialUrls } from '../../Interfaces/global';
 import { Router } from '@angular/router';
 import { socialUrlsTemplate } from '../../Interfaces/socialUrls';
 import { WindowWidthService } from '../window-width.service';
-import { pageTemplate } from 'src/app/Interfaces/content';
+import { pageTemplate } from 'src/app/Interfaces/pageTemplate';
 
 @Component({
     selector: 'app-footer',
