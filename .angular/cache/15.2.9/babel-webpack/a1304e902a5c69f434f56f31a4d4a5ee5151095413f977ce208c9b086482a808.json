@@ -1,0 +1,1 @@
+{"ast":null,"code":"// Note that the font must be linked in index.html\nexport const fonts = {\n  font1: \"Merriweather\",\n  font2: \"Montserrat\",\n  font3: \"Raleway\"\n};","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
