@@ -8,18 +8,6 @@ import { Router } from '@angular/router';
     styleUrls: ['./text-item.component.css']
 })
 export class TextItemComponent {
-	// @Input() item: textTemplate = {
-	// 	type: 'text',
-	// 	content: 'Not Loading',
-	// 	fontFamily: '',
-	// 	fontColour: '',
-	// 	fontSize: 16,
-	// 	fontWeight: 'normal',
-	// 	lineHeight: 27
-	// };
-
-	// @Input() lastItem: boolean = false;
-
 	@Input() text: Array<textTemplate | buttonTemplate | contactPage> = [];
 	hover: boolean = false;
 

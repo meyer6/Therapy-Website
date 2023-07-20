@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Location } from "@angular/common";
 import { logoUrl, site, socialUrls } from '../../Interfaces/global';
 import { colours, colourTemplate } from '../../Interfaces/colours';
 import { fonts, fontsTemplate } from '../../Interfaces/fonts';
@@ -25,7 +26,7 @@ export class NavbarComponent {
 
 	site: Array<pageTemplate> = site
 
-	constructor(private router: Router) {}
+	constructor(private router: Router, public location: Location) {}
 
 	ngOnInit(){
 		window.addEventListener("scroll", () => {

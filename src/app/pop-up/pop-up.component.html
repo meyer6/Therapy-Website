@@ -1,10 +1,17 @@
-<div *ngIf="open" class="blur"></div>
 <div 
-    *ngIf="open"    
+    class="blur" 
+    [ngStyle]="{
+        'top': open ? '0' : '',
+        'opacity': open ? '0.2' : '',
+        'backdrop-filter': open ? 'blur(0.75px)' : '',
+    }"
+></div>
+<div     
     class="container"
     [style.background]="colours.background1"
     [style.font-family]="fonts.font3"
     [style.color]="colours.font1"
+    [ngStyle]="{'top': open ? '50%' : ''}"
     
 >
     <img

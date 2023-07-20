@@ -13,10 +13,11 @@ import { TextItemComponent } from './text-item/text-item.component';
 import { Module2bComponent } from './Modules/module2b/module2b.component';
 import { Module1bComponent } from './Modules/module1b/module1b.component';
 import { LandingModuleComponent } from './Modules/landing-module/landing-module.component';
-import { ContactComponent } from './Modules/contact/contact.component';
+import { ContactComponent } from './customContentSections/contact/contact.component';
 import { Module12MobileComponent } from './Modules/module12-mobile/module12-mobile.component';
 import { ImageModuleComponent } from './Modules/image-module/image-module.component';
 import { PopUpComponent } from './pop-up/pop-up.component';
+import { ImageGridComponent } from './Modules/image-grid/image-grid.component';
 
 @NgModule({
     declarations: [
@@ -34,6 +35,7 @@ import { PopUpComponent } from './pop-up/pop-up.component';
         Module12MobileComponent,
         ImageModuleComponent,
         PopUpComponent,
+        ImageGridComponent,
     ],
     imports: [
         BrowserModule,

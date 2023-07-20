@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { landingModuleTemplate } from 'src/app/Interfaces/content';
+import { WindowWidthService } from '../window-width.service';
 
 @Component({
     selector: 'app-landing-module',
@@ -12,4 +13,6 @@ export class LandingModuleComponent {
 		backgroundImg: '',
 		text: []
 	};
+
+	constructor(public windowService: WindowWidthService) {}
 }

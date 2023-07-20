@@ -1,7 +1,7 @@
 
 <div *ngFor="let item of text, let i = index">
     <div *ngIf="item.type == 'text'">
-            <div 
+        <div 
             [ngStyle]="{
                 'font-size': item.fontSize.toString() + 'px',
                 'font-family': item.fontFamily,
@@ -9,7 +9,7 @@
                 'line-height': item.lineHeight.toString() + 'px',
                 'letter-spacing': '2em;',
                 'color': item.fontColour,
-                'margin-bottom': i == text.length -1 ? '0px' : '30px',
+                'margin-bottom': i == text.length - 1 ? '0px' : '30px',
             }"
             [innerHTML]="item.content"
         ></div>    
@@ -37,12 +37,7 @@
         </div>
     </div>
 
-    <div 
-        *ngIf="item.type == 'contact'"
-        [ngStyle]="{
-            'margin-bottom': i == text.length -1 ? '0px' : '30px',
-        }"
-    >
+    <div *ngIf="item.type == 'contact'">
         <app-contact></app-contact>
     </div>    
 </div>

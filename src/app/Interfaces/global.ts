@@ -19,7 +19,7 @@ export const site: Array<pageTemplate> = [
         modules: [
             {
                 type: 'landingModule',
-                backgroundImg: 'https://images.squarespace-cdn.com/content/v1/5ed4e58c2bc5dc1defd26236/619dfb47-2b41-4dd5-a797-cda9eb213175/Elyssa-Desai-Coaching-Homepage.jpg',
+                backgroundImg: 'assets/landingPage.jpg',
                 text: [{...heading1, ...{content: 'Luisa Picciuto'}},
                     {...thinText, ...{content: 'COACHING'}}
                 ]
@@ -141,9 +141,34 @@ export const site: Array<pageTemplate> = [
         modules: [
             {
                 type: 'module3d',
-                backgroundColour: colours.background1,
+                backgroundColour: colours.background2,
                 text1: [
-                    {...heading2, ...{content: 'Hello!'}},
+                    {...heading2, ...{content: '"Loving and Caring"'}},
+                    {...normalText, ...{content: '<b>Maria Melissa</b>'}},
+                    {...normalText, ...{content: '"Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fuleive, every testimonial I read, my heart is so full with happiness"'}},
+                ],
+                text2:[],
+                text3: []
+            },
+            {
+                type: 'imageGrid',
+                backgroundColour: colours.background1,
+                images: [
+                    'assets/testimonial.png',
+                    'assets/testimonial.png',
+                    'assets/testimonial.png',
+                    'assets/testimonial.png',
+                    'assets/testimonial.png',
+                    'assets/testimonial.png'
+                ]
+            },
+            {
+                type: 'module3d',
+                backgroundColour: colours.background2,
+                text1: [
+                    {...heading2, ...{content: '"Loving and Caring"'}},
+                    {...normalText, ...{content: '<b>Maria Melissa</b>'}},
+                    {...normalText, ...{content: '"Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fuleive, every testimonial I read, my heart is so full with happiness"'}},
                 ],
                 text2:[],
                 text3: []

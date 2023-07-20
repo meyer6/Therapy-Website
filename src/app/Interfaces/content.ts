@@ -1,20 +1,25 @@
 export interface pageTemplate {
     url: string;
-    modules: Array<imageAndTextModule | module3Template | landingModuleTemplate>
+    modules: Array<imageAndTextModule | module3Template | imageGridModule | landingModuleTemplate>
 }
 
 export interface imageAndTextModule {
     type: 'module1a' | 'module1b' | 'module2a' | 'module2b' | 'imageModule';
     backgroundColour: string;
     imgURL: string;
-    text: Array<textTemplate | buttonTemplate | contactPage>
+    text: Array<textTemplate | buttonTemplate | contactPage >
 }
 export interface module3Template {
     type: 'module3a' | 'module3b' | 'module3c' | 'module3d';
     backgroundColour: string;
-    text1: Array<textTemplate | buttonTemplate | contactPage>;
-    text2: Array<textTemplate | buttonTemplate | contactPage>;
-    text3: Array<textTemplate | buttonTemplate | contactPage>
+    text1: Array<textTemplate | buttonTemplate | contactPage >;
+    text2: Array<textTemplate | buttonTemplate | contactPage >;
+    text3: Array<textTemplate | buttonTemplate | contactPage >
+}
+export interface imageGridModule {
+    type: 'imageGrid';
+    backgroundColour: string;
+    images: Array<string>;
 }
 export interface landingModuleTemplate {
     type: 'landingModule';

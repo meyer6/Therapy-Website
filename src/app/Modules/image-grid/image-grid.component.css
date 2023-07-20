@@ -1,0 +1,36 @@
+.container {
+    width: 100%;
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+.grid {
+    margin: auto;
+    width: min(1260px, 90%);
+    column-count: 3;
+    column-width: 200px;
+    column-gap: 15px;
+}
+  
+.grid > div {
+    break-inside: avoid-column; 
+    page-break-inside:avoid; 
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.img-wrapper {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.img-wrapper img {
+    width: 100%;
+    vertical-align: middle;
+    transition: all .2s ease;
+}
+
+.img-wrapper img:hover {
+    transform: scale(1.3);
+}

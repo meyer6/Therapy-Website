@@ -1,0 +1,12 @@
+<div 
+    class="container"
+    [ngStyle]="{
+        'background': module.backgroundColour,
+    }"
+>
+    <div class="grid">
+        <div *ngFor="let image of module.images">
+            <div class="img-wrapper"><img [src]="image"></div>
+        </div>
+    </div>
+</div>
