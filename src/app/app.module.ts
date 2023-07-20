@@ -9,14 +9,14 @@ import { Module1aComponent } from './Modules/module1a/module1a.component';
 import { Module2aComponent } from './Modules/module2a/module2a.component';
 import { TextModuleComponent } from './Modules/text-module/text-module.component';
 import { FooterComponent } from './Modules/footer/footer.component';
-import { ContentComponent } from './content/content.component';
+import { ContentComponent } from './contentComponents/content/content.component';
 import { Module2bComponent } from './Modules/module2b/module2b.component';
 import { Module1bComponent } from './Modules/module1b/module1b.component';
 import { LandingModuleComponent } from './Modules/landing-module/landing-module.component';
-import { ContactComponent } from './customContentSections/contact/contact.component';
+import { ContactComponent } from './contentComponents/contact/contact.component';
 import { Module12MobileComponent } from './Modules/module12-mobile/module12-mobile.component';
 import { ImageModuleComponent } from './Modules/image-module/image-module.component';
-import { PopUpComponent } from './pop-up/pop-up.component';
+import { PopUpComponent } from './Modules/pop-up/pop-up.component';
 import { ImageGridComponent } from './Modules/image-grid/image-grid.component';
 
 @NgModule({

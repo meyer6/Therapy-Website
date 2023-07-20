@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { buttonTemplate, textTemplate, contactPage } from '../Interfaces/contentTemplates';
+import { buttonTemplate, textTemplate, contactPage } from '../../Interfaces/contentTemplates';
 import { Router } from '@angular/router';
 
 @Component({
