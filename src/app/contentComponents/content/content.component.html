@@ -1,5 +1,5 @@
 
-<div *ngFor="let item of text, let i = index">
+<div *ngFor="let item of content, let i = index">
     <div *ngIf="item.type == 'text'">
         <div 
             [ngStyle]="{
@@ -9,7 +9,7 @@
                 'line-height': item.lineHeight.toString() + 'px',
                 'letter-spacing': '2em;',
                 'color': item.fontColour,
-                'margin-bottom': i == text.length - 1 ? '0px' : '30px',
+                'margin-bottom': i == content.length - 1 ? '0px' : '30px',
             }"
             [innerHTML]="item.content"
         ></div>    
@@ -25,12 +25,12 @@
                     'color': '#FFFFFF', 
                     'background': item.colour, 
                     'font-family': item.fontFamily,
-                    'margin-bottom': i == text.length - 1 ? '0px' : '30px'
+                    'margin-bottom': i == content.length - 1 ? '0px' : '30px'
                 }:{
                     'border-color': item.colour, 
                     'color': item.colour, 
                     'font-family': item.fontFamily,
-                    'margin-bottom': i == text.length - 1 ? '0px' : '30px'
+                    'margin-bottom': i == content.length - 1 ? '0px' : '30px'
                 }"
         >
             {{ item.content }}

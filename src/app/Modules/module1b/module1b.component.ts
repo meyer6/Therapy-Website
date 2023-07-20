@@ -12,7 +12,7 @@ export class Module1bComponent {
 		type: 'module1a',
 		backgroundColour: '',
 		imgURL: '',
-		text: []
+		content: []
 	};
 	constructor(public windowService: WindowWidthService) {}
 }

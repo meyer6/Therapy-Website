@@ -241,13 +241,13 @@ export const blogPages: Array<pageTemplate> = blogs.map((blog: blogTemplate, i: 
             {
                 type: 'module3c',
                 backgroundColour: '#FFFFFF',
-                text1: [
+                content1: [
                     {...heading2, ...{content: blog.title}},
                     {...normalText, ...{fontWeight: 'bold', content: blog.date}},
                     ...blog.content
                 ],
-                text2: [],
-                text3: []
+                content2: [],
+                content3: []
             }
         ]
     }

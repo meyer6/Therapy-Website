@@ -17,14 +17,14 @@
         <div 
             class="text-container1-inner" 
             *ngIf="windowService.windowWidth >= windowService.minWidth">
-            <app-content [text]="module.text1"></app-content>
+            <app-content [content]="module.content1"></app-content>
         </div>        
 
         <div 
             class="text-container1-inner" 
             *ngIf="windowService.windowWidth < windowService.minWidth"
         >
-            <app-content [text]="module.text1.concat(module.text2, module.text3)"></app-content>
+            <app-content [content]="module.content1.concat(module.content2, module.content3)"></app-content>
         </div> 
     </div>
 
@@ -35,11 +35,11 @@
         " 
         class="text-container"
     >        <div class="text-container2-inner">
-            <app-content [text]="module.text2"></app-content>
+            <app-content [content]="module.content2"></app-content>
         </div>
 
         <div class="text-container2-inner">
-            <app-content [text]="module.text3"></app-content>
+            <app-content [content]="module.content3"></app-content>
         </div>
     </div>
 </div>

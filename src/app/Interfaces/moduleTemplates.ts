@@ -4,14 +4,14 @@ export interface imageAndTextModule {
     type: 'module1a' | 'module1b' | 'module2a' | 'module2b' | 'imageModule';
     backgroundColour: string;
     imgURL: string;
-    text: Array<textTemplate | buttonTemplate | contactPage >
+    content: Array<textTemplate | buttonTemplate | contactPage >
 }
 export interface textModule {
     type: 'module3a' | 'module3b' | 'module3c' | 'module3d';
     backgroundColour: string;
-    text1: Array<textTemplate | buttonTemplate | contactPage >;
-    text2: Array<textTemplate | buttonTemplate | contactPage >;
-    text3: Array<textTemplate | buttonTemplate | contactPage >
+    content1: Array<textTemplate | buttonTemplate | contactPage >;
+    content2: Array<textTemplate | buttonTemplate | contactPage >;
+    content3: Array<textTemplate | buttonTemplate | contactPage >
 }
 export interface imageGridModule {
     type: 'imageGrid';
@@ -21,5 +21,5 @@ export interface imageGridModule {
 export interface landingModule {
     type: 'landingModule';
     backgroundImg: string;
-    text: Array<textTemplate | buttonTemplate>;
+    content: Array<textTemplate | buttonTemplate>;
 }

@@ -11,6 +11,6 @@ export class ImageModuleComponent {
         type: 'module1a',
         backgroundColour: '',
         imgURL: '',
-        text: []
+        content: []
     };
 }

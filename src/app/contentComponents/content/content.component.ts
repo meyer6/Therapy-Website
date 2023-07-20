@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
     styleUrls: ['./content.component.css']
 })
 export class ContentComponent {
-	@Input() text: Array<textTemplate | buttonTemplate | contactPage> = [];
+	@Input() content: Array<textTemplate | buttonTemplate | contactPage> = [];
 	hover: boolean = false;
 
 	constructor(private router: Router) {}

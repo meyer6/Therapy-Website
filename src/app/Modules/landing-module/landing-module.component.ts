@@ -11,7 +11,7 @@ export class LandingModuleComponent {
 	@Input() module: landingModule = {
 		type: 'landingModule',
 		backgroundImg: '',
-		text: []
+		content: []
 	};
 
 	constructor(public windowService: WindowWidthService) {}

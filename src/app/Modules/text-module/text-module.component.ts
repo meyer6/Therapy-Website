@@ -11,9 +11,9 @@ export class TextModuleComponent {
 	@Input() module: textModule = {
 		type: 'module3a',
 		backgroundColour: '',
-		text1: [],
-		text2: [],
-		text3: [],
+		content1: [],
+		content2: [],
+		content3: [],
 	};
 
 	constructor(public windowService: WindowWidthService) {}
