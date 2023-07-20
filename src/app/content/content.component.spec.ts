@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TextItemComponent } from './text-item.component';
+import { ContentComponent } from './content.component';
 
-describe('TextItemComponent', () => {
-  let component: TextItemComponent;
-  let fixture: ComponentFixture<TextItemComponent>;
+describe('ContentComponent', () => {
+  let component: ContentComponent;
+  let fixture: ComponentFixture<ContentComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TextItemComponent ]
+      declarations: [ ContentComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TextItemComponent);
+    fixture = TestBed.createComponent(ContentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

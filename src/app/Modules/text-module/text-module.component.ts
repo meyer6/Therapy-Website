@@ -3,11 +3,11 @@ import { WindowWidthService } from '../window-width.service';
 import { textModule } from 'src/app/Interfaces/moduleTemplates';
 
 @Component({
-    selector: 'app-module3',
-    templateUrl: './module3.component.html',
-    styleUrls: ['./module3.component.css']
+    selector: 'app-text-module',
+    templateUrl: './text-module.component.html',
+    styleUrls: ['./text-module.component.css']
 })
-export class Module3Component {
+export class TextModuleComponent {
 	@Input() module: textModule = {
 		type: 'module3a',
 		backgroundColour: '',

@@ -6,7 +6,7 @@
     <div class="overlay"></div>
 
     <div [ngClass]="'text-container ' + ((windowService.windowWidth >= 800) ? '' : 'mobile')">
-        <app-text-item [text]="module.text"></app-text-item>
+        <app-content [text]="module.text"></app-content>
     </div>
 
 </div>

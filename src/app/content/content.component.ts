@@ -3,11 +3,11 @@ import { buttonTemplate, textTemplate, contactPage } from '../Interfaces/content
 import { Router } from '@angular/router';
 
 @Component({
-    selector: 'app-text-item',
-    templateUrl: './text-item.component.html',
-    styleUrls: ['./text-item.component.css']
+    selector: 'app-content',
+    templateUrl: './content.component.html',
+    styleUrls: ['./content.component.css']
 })
-export class TextItemComponent {
+export class ContentComponent {
 	@Input() text: Array<textTemplate | buttonTemplate | contactPage> = [];
 	hover: boolean = false;
 
