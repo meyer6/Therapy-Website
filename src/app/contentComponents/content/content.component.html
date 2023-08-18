@@ -18,17 +18,18 @@
             class="button"
             (mouseover)="hover=true" (mouseleave)="hover=false"
             (click)="navigate(item.redirectURL)"
-            [ngStyle]="hover ? {
+
+            [style.font-family]="item.fontFamily"
+            [style.margin-bottom.px]="i == content.length - 1 ? 0 : 30"
+            [style.margin]="item.centre ? 'auto' : ''"
+
+            [ngStyle]="hover || item.filled ? {
                     'border-color': item.colour, 
                     'color': '#FFFFFF', 
                     'background': item.colour, 
-                    'font-family': item.fontFamily,
-                    'margin-bottom': i == content.length - 1 ? '0px' : '30px'
                 }:{
                     'border-color': item.colour, 
                     'color': item.colour, 
-                    'font-family': item.fontFamily,
-                    'margin-bottom': i == content.length - 1 ? '0px' : '30px'
                 }"
         >
             {{ item.content }}

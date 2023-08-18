@@ -3,6 +3,8 @@ export interface buttonTemplate {
     content: string;
     fontFamily: string;
     colour: string;
+    centre?: boolean;
+    filled?: boolean;
     redirectURL: string;
 }
 

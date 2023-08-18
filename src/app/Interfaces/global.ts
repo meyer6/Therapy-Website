@@ -77,6 +77,7 @@ export const site: Array<pageTemplate> = [
                 content: [
                     {...normalText, ...{content: '<b>Diploma with the Animas Centre</b>', 'fontColour': 'white', 'fontSize': 20}},
                     {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel!', 'fontColour': 'white'}},
+                    {...button, ...{content: 'button', redirectURL: 'About-Me', 'centre': true, 'filled': true}},
                 ]
             }
         ]
