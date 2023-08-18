@@ -2,15 +2,13 @@
 <div *ngFor="let item of content, let i = index">
     <div *ngIf="item.type == 'text'">
         <div 
-            [ngStyle]="{
-                'font-size': item.fontSize.toString() + 'px',
-                'font-family': item.fontFamily,
-                'font-weight': item.fontWeight,
-                'line-height': item.lineHeight.toString() + 'px',
-                'letter-spacing': '2em;',
-                'color': item.fontColour,
-                'margin-bottom': i == content.length - 1 ? '0px' : '30px',
-            }"
+            [style.font-size.px]="item.fontSize"
+            [style.font-family]="item.fontFamily"
+            [style.font-weight]="item.fontWeight"
+            [style.line-height.px]="item.lineHeight"
+            [style.color]="item.fontColour"
+            [style.margin-bottom.px]="i == content.length - 1 ? 0 : 30"
+
             [innerHTML]="item.content"
         ></div>    
     </div>
@@ -35,6 +33,15 @@
         >
             {{ item.content }}
         </div>
+    </div>
+
+    <div *ngIf="item.type == 'image'">
+        <img 
+            [src]="item.src"
+            [style.height]="item.height"
+            [style.width]="item.width"
+            [style.margin-bottom.px]="i == content.length - 1 ? 0 : 30"
+        >
     </div>
 
     <div *ngIf="item.type == 'contact'">
