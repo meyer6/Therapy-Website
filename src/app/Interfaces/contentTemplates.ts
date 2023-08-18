@@ -16,6 +16,13 @@ export interface textTemplate {
     lineHeight: 'normal' | number;
 }
 
+export interface imageTemplate {
+    type: 'image';
+    src: string;
+    height?: string;
+    width?: string;
+}
+
 // Custom templates
 export interface contactPage {
     type: 'contact'

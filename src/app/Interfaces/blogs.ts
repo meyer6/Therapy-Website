@@ -1,5 +1,5 @@
 import { pageTemplate } from './pageTemplate';
-import { buttonTemplate, textTemplate } from "./contentTemplates";
+import { buttonTemplate, imageTemplate, textTemplate } from "./contentTemplates";
 import { heading1, heading2, heading3, normalText, thinText, button } from './textDefaults';
 
 export interface blogTemplate {
@@ -7,7 +7,7 @@ export interface blogTemplate {
     imgURL: string;
     date: string;
     description: string;
-    content: Array<textTemplate | buttonTemplate>
+    content: Array<textTemplate | buttonTemplate | imageTemplate>
 }
 
 export const blogs: Array<blogTemplate> = [
@@ -29,6 +29,11 @@ export const blogs: Array<blogTemplate> = [
         description: 'oma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind',
         content: [
             {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
+            {
+                type: 'image', 
+                src: 'https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
+                width: '50%'
+            },
             {...heading3, ...{content: 'Diploma with the Animas Centre for Coaching!'}},
             {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
         ]

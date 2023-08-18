@@ -7,9 +7,9 @@ export interface colourTemplate {
 }
 
 export const colours: colourTemplate = {
-    background1: "#e4ebeb", //"#F4EEE9"
+    background1: "#ecf5f1", //"#e4ebeb"
     background2: "#FFFFFF",
-    font1: "#2c5194", //375CA0 //A4381D
-    font2: "#967253", //EB6E80 //EB6949
+    font1: "#083D77", //2c5194 //A4381D
+    font2: "#DA4167", //967253 //EB6949
     font3: "#000000",
 };

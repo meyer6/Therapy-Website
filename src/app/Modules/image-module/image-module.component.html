@@ -4,5 +4,18 @@
         'background': module.backgroundColour,
     }"
 >
+    <img 
+        [src]="module.imgURL" 
+        class="image"
+        [style.height.px]="imageModuleTextContainer.offsetHeight"
+    >
 
+    <div 
+        class="overlay" 
+        [style.height.px]="imageModuleTextContainer.offsetHeight"
+    ></div>
+
+    <div class="text-container" #imageModuleTextContainer>
+        <app-content [content]="module.content"></app-content>
+    </div>
 </div>

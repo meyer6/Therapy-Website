@@ -9,7 +9,7 @@ import { buttonTemplate } from './contentTemplates';
 
 export const logoUrl: string = "assets/Logo.png"
 
-export const email: string = 'meyerlouka6@gmail.com'
+export const email: string = 'wellbeingcoaching_luisa@outlook.com'
 export const socialUrls: socialUrlsTemplate = {
     instagram: 'https://www.instagram.com/',
     linkedin: 'https://www.instagram.com/'
@@ -70,16 +70,15 @@ export const site: Array<pageTemplate> = [
                 content2:[],
                 content3:[]
             },
-            // {
-            //     type: 'imageModule',
-            //     backgroundColour: colours.background1,
-            //     imgURL: 'assets/Img1.jpg',
-            //     text: [
-            //         {...heading2, ...{content: 'Hello!'}},
-            //         {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
-            //         {...button, ...{content: 'Contact Me', redirectURL: 'Contact'}},
-            //     ]
-            // }
+            {
+                type: 'imageModule',
+                backgroundColour: colours.background1,
+                imgURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmieZ-kKu6KOGfR2b0gZPEEtPEVuu-pvV4ZQ&usqp=CAU',
+                content: [
+                    {...normalText, ...{content: '<b>Diploma with the Animas Centre</b>', 'fontColour': 'white', 'fontSize': 20}},
+                    {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel!', 'fontColour': 'white'}},
+                ]
+            }
         ]
     },
     {
