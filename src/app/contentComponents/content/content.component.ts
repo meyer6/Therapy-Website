@@ -13,7 +13,7 @@ export class ContentComponent {
 
 	constructor(private router: Router) {}
 
-	navigate(route: string) {
+	navigate(route: string){
 		if(route.slice(0, 4) == 'http'){
   			window.open(route, '_blank');
 		}else{
