@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
-import { colourTemplate, colours } from '../../Interfaces/colours';
-import { fonts, fontsTemplate } from '../../Interfaces/fonts';
+import { colourTemplate } from '../../Interfaces/colours';
+import { fontsTemplate } from '../../Interfaces/fonts';
 import { buttonTemplate, textTemplate } from '../../Interfaces/contentTemplates';
-import { heading2, normalText } from '../../Interfaces/textDefaults';
+import { fonts } from 'src/app/websiteData/fonts';
+import { colours } from 'src/app/websiteData/colours';
+// import { heading2, normalText } from '../../Interfaces/textDefaults';
 
 @Component({
     selector: 'app-pop-up',
@@ -14,8 +16,8 @@ export class PopUpComponent {
 	fonts: fontsTemplate = fonts;
 
 	content: Array<textTemplate | buttonTemplate> = [
-		{...heading2, ...{fontSize: 30, content: 'Newsletter'}},
-		{...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fuleive, every testimonial I read, my heart is so full with happiness'}},
+		// {...heading2, ...{fontSize: 30, content: 'Newsletter'}},
+		// {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fuleive, every testimonial I read, my heart is so full with happiness'}},
 	]
 
 	open: boolean = false;

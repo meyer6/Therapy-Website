@@ -1,6 +1,6 @@
-import { buttonTemplate, textTemplate } from "./contentTemplates"
+import { buttonTemplate, textTemplate } from "../Interfaces/contentTemplates"
+import { colours } from "./colours"
 import { fonts } from "./fonts"
-import { colours } from './colours';
 
 export const heading1: textTemplate = {
     type: 'text',

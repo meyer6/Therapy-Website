@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
-import { colours, colourTemplate } from '../../Interfaces/colours';
-import { fonts, fontsTemplate } from '../../Interfaces/fonts';
-import { email, site, socialUrls } from '../../Interfaces/global';
+import { colourTemplate } from '../../Interfaces/colours';
+import {  fontsTemplate } from '../../Interfaces/fonts';
 import { Router } from '@angular/router';
 import { socialUrlsTemplate } from '../../Interfaces/socialUrls';
 import { WindowWidthService } from '../window-width.service';
 import { pageTemplate } from 'src/app/Interfaces/pageTemplate';
+import { colours } from 'src/app/websiteData/colours';
+import { fonts } from 'src/app/websiteData/fonts';
+import { email, socialUrls } from 'src/app/websiteData/other';
+import { site } from 'src/app/websiteData/pages';
 
 @Component({
     selector: 'app-footer',

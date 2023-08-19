@@ -8,7 +8,7 @@
 }
 
 .image {
-    width: min(1130px, 88%);
+    width: min(1150px, 88%);
     object-fit: cover;
     border-radius: 12px;
 }
