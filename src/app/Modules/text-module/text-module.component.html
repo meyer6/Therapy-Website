@@ -24,7 +24,9 @@
             class="text-container1-inner" 
             *ngIf="windowService.windowWidth < windowService.minWidth"
         >
-            <app-content [content]="module.content1.concat(module.content2, module.content3)"></app-content>
+            <div><app-content [content]="module.content1"></app-content></div>
+            <div><app-content [content]="module.content2"></app-content></div>
+            <div><app-content [content]="module.content3"></app-content></div>
         </div> 
     </div>
 
