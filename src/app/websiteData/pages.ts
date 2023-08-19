@@ -11,7 +11,7 @@ export const site: Array<pageTemplate> = [
         modules: [
             {
                 type: 'landingModule',
-                backgroundImg: 'assets/landingPage.jpg',
+                backgroundImg: 'assets/homePage/landingPage.jpg',
                 content: [{...heading1, ...{content: 'Luisa Picciuto'}},
                     {...thinText, ...{content: 'COACHING'}}
                 ]
@@ -31,7 +31,7 @@ export const site: Array<pageTemplate> = [
             {
                 type: 'module1b',
                 backgroundColour: colours.background2,
-                imgURL: 'assets/Img1.jpg',
+                imgURL: 'assets/homePage/Img1.jpg',
                 content: [
                     {...heading2, ...{content: 'Hello!'}},
                     {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
@@ -41,7 +41,7 @@ export const site: Array<pageTemplate> = [
             {
                 type: 'module1a',
                 backgroundColour: colours.background1,
-                imgURL: 'assets/Img1.jpg',
+                imgURL: 'assets/homePage/Img1.jpg',
                 content: [
                     {...heading2, ...{content: 'Hello!'}},
                     {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
@@ -52,7 +52,7 @@ export const site: Array<pageTemplate> = [
                 type: 'module3c',
                 backgroundColour: colours.background2,
                 content1: [
-                    {...heading2, ...{content: 'Hello!'}},
+                    {...heading2, ...{content: 'You can achieve gra'}},
                     {...heading3, ...{content: 'I\'m Elyssa, a qualified Mindset Coach & certified Hypnotherapist.'}},
                     {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
                     {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
@@ -78,7 +78,7 @@ export const site: Array<pageTemplate> = [
             {
                 type: 'module1a',
                 backgroundColour: colours.background2,
-                imgURL: 'assets/Img1.jpg',
+                imgURL: 'assets/homePage/Img1.jpg',
                 content: [
                     {...heading1, ...{content: 'Hello!'}},
                     {...heading3, ...{content: 'I\'m Elyssa, a qualified Mindset Coach & certified Hypnotherapist'}},
@@ -88,7 +88,7 @@ export const site: Array<pageTemplate> = [
             {
                 type: 'module2a',
                 backgroundColour: colours.background1,
-                imgURL: 'assets/Img1.jpg',
+                imgURL: 'assets/homePage/Img1.jpg',
                 content: [
                     {...heading2, ...{content: 'Hello!'}},
                     {...heading3, ...{content: 'I\'m Elyssa, a qualified Mindset Coach & certified Hypnotherapist'}},
@@ -135,9 +135,9 @@ export const site: Array<pageTemplate> = [
                 type: 'module3d',
                 backgroundColour: colours.background2,
                 content1: [
-                    {...heading2, ...{content: '"Loving and Caring"'}},
+                    {...heading2, ...{content: '<i><u>"Loving and Caring</i>"</u>'}},
                     {...normalText, ...{content: '<b>Maria Melissa</b>'}},
-                    {...normalText, ...{content: '"Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fuleive, every testimonial I read, my heart is so full with happiness"'}},
+                    {...normalText, ...{content: '<i>"Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fuleive, every testimonial I read, my heart is so full with happiness"</i>'}},
                 ],
                 content2:[],
                 content3: []
@@ -146,12 +146,12 @@ export const site: Array<pageTemplate> = [
                 type: 'imageGrid',
                 backgroundColour: colours.background1,
                 images: [
-                    'assets/testimonial.png',
-                    'assets/testimonial.png',
-                    'assets/testimonial.png',
-                    'assets/testimonial.png',
-                    'assets/testimonial.png',
-                    'assets/testimonial.png'
+                    'assets/testimonials/testimonial.png',
+                    'assets/testimonials/testimonial.png',
+                    'assets/testimonials/testimonial.png',
+                    'assets/testimonials/testimonial.png',
+                    'assets/testimonials/testimonial.png',
+                    'assets/testimonials/testimonial.png'
                 ]
             },
             {
@@ -188,12 +188,93 @@ export const site: Array<pageTemplate> = [
         url: 'Resources',
         modules: [
             {
-                type: 'module2a',
-                backgroundColour: colours.background1,
-                imgURL: 'assets/book.jpg',
-                content: [
+                type: 'module3a',
+                backgroundColour: colours.background2,
+                content1:[{...heading2, ...{content: 'Resources'}}],
+                content2:[
                     {...heading3, ...{content: 'Book'}},
-                    {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fuleive, every testimonial I read, my heart is so full with happiness'}},
+                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
+                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
+                ],
+                content3: [
+                    {...heading3, ...{content: 'Book'}},
+                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
+                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
+                ]
+            },
+            {
+                type: 'module3b',
+                backgroundColour: colours.background1,
+                content1:[],
+                content2:[
+                    {...heading3, ...{content: 'Book'}},
+                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
+                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
+                ],
+                content3: [
+                    {...heading3, ...{content: 'Book'}},
+                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
+                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
+                ]
+            },
+            {
+                type: 'module3b',
+                backgroundColour: colours.background2,
+                content1:[],
+                content2:[
+                    {...heading3, ...{content: 'Book'}},
+                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
+                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
+                ],
+                content3: [
+                    {...heading3, ...{content: 'Book'}},
+                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
+                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
+                ]
+            },
+            {
+                type: 'module3b',
+                backgroundColour: colours.background1,
+                content1:[],
+                content2:[
+                    {...heading3, ...{content: 'Book'}},
+                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
+                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
+                ],
+                content3: [
+                    {...heading3, ...{content: 'Book'}},
+                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
+                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
+                ]
+            },
+            {
+                type: 'module3b',
+                backgroundColour: colours.background2,
+                content1:[],
+                content2:[
+                    {...heading3, ...{content: 'Book'}},
+                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
+                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
+                ],
+                content3: [
+                    {...heading3, ...{content: 'Book'}},
+                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
+                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
+                ]
+            },
+            {
+                type: 'module3b',
+                backgroundColour: colours.background1,
+                content1:[],
+                content2:[
+                    {...heading3, ...{content: 'Book'}},
+                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
+                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
+                ],
+                content3: [
+                    {...heading3, ...{content: 'Book'}},
+                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
+                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
                 ]
             },
         ]

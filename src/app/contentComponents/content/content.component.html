@@ -36,11 +36,12 @@
         </div>
     </div>
 
-    <div *ngIf="item.type == 'image'">
+    <div *ngIf="item.type == 'image'" class="image-container">
         <img 
             [src]="item.src"
             [style.height]="item.height"
             [style.width]="item.width"
+            [style.max-width]="'100%'"
             [style.margin-bottom.px]="i == content.length - 1 ? 0 : 30"
         >
     </div>

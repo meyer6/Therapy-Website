@@ -1,9 +1,10 @@
 <div class="container">
+    <div class="overlay"></div>
+
     <img 
         [src]="module.backgroundImg" 
         [ngClass]="'background-img ' + ((windowService.windowWidth >= 800) ? '' : 'mobile-img')"
     >
-    <div class="overlay"></div>
 
     <div [ngClass]="'text-container ' + ((windowService.windowWidth >= 800) ? '' : 'mobile')">
         <app-content [content]="module.content"></app-content>
