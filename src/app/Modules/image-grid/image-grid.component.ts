@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { imageGridModule } from 'src/app/Interfaces/moduleTemplates';
+import { imagesModule } from 'src/app/Interfaces/moduleTemplates';
 
 @Component({
     selector: 'app-image-grid',
@@ -7,7 +7,7 @@ import { imageGridModule } from 'src/app/Interfaces/moduleTemplates';
     styleUrls: ['./image-grid.component.css']
 })
 export class ImageGridComponent {
-    @Input() module: imageGridModule = {
+    @Input() module: imagesModule = {
 		type: 'imageGrid',
         backgroundColour: '',
 		images: []

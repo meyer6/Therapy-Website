@@ -18,6 +18,8 @@ import { Module12MobileComponent } from './Modules/module12-mobile/module12-mobi
 import { ImageModuleComponent } from './Modules/image-module/image-module.component';
 import { PopUpComponent } from './Modules/pop-up/pop-up.component';
 import { ImageGridComponent } from './Modules/image-grid/image-grid.component';
+import { CarouselComponent } from './Modules/carousel/carousel.component';
+import { ModuleFiltererComponent } from './module-filterer/module-filterer.component';
 
 @NgModule({
     declarations: [
@@ -36,6 +38,8 @@ import { ImageGridComponent } from './Modules/image-grid/image-grid.component';
         ImageModuleComponent,
         PopUpComponent,
         ImageGridComponent,
+        CarouselComponent,
+        ModuleFiltererComponent,
     ],
     imports: [
         BrowserModule,

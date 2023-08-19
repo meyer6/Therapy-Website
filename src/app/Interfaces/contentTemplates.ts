@@ -23,6 +23,7 @@ export interface imageTemplate {
     src: string;
     height?: string;
     width?: string;
+    borderRadius?: string;
 }
 
 // Custom templates

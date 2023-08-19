@@ -1,0 +1,33 @@
+<div *ngIf="module.type == 'landingModule'">
+    <app-landing-module [module]="module"></app-landing-module>
+</div>
+
+<div *ngIf="module.type == 'module1a'">
+    <app-module1a [module]="module"></app-module1a>
+</div>
+<div *ngIf="module.type == 'module1b'">
+    <app-module1b [module]="module"></app-module1b>
+</div>
+
+<div *ngIf="module.type == 'module2a'">
+    <app-module2a [module]="module"></app-module2a>
+</div>
+<div *ngIf="module.type == 'module2b'">
+    <app-module2b [module]="module"></app-module2b>
+</div>
+
+<div *ngIf="module.type == 'module3a' || module.type == 'module3b' || module.type == 'module3c' || module.type == 'module3d'">
+    <app-text-module [module]="module"></app-text-module>
+</div>
+
+<div *ngIf="module.type == 'imageModule'">
+    <app-image-module [module]="module"></app-image-module>
+</div>
+
+<div *ngIf="module.type == 'imageGrid'">
+    <app-image-grid [module]="module"></app-image-grid>
+</div>
+
+<div *ngIf="module.type == 'carousel'">
+    <app-carousel [module]="module"></app-carousel>
+</div>

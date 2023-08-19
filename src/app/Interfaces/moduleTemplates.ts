@@ -13,11 +13,18 @@ export interface textModule {
     content2: Array<textTemplate | buttonTemplate | imageTemplate | contactPage >;
     content3: Array<textTemplate | buttonTemplate | imageTemplate | contactPage >
 }
-export interface imageGridModule {
+export interface imagesModule {
     type: 'imageGrid';
     backgroundColour: string;
     images: Array<string>;
 }
+
+export interface carouselModule {
+    type: 'carousel';
+    backgroundColour: string;
+    modules: Array<textModule | imageAndTextModule>;
+}
+
 export interface landingModule {
     type: 'landingModule';
     backgroundImg: string;

@@ -7,7 +7,8 @@
 		></div>
 
 		<div *ngFor="let module of page.modules.slice(0, numOfModules)">
-
+			<app-module-filterer [module]="module"></app-module-filterer>
+<!-- 
 			<div *ngIf="module.type == 'landingModule'">
 				<app-landing-module [module]="module"></app-landing-module>
 			</div>
@@ -37,6 +38,10 @@
 			<div *ngIf="module.type == 'imageGrid'">
 				<app-image-grid [module]="module"></app-image-grid>
 			</div>
+
+			<div *ngIf="module.type == 'carousel'">
+				<app-carousel [module]="module"></app-carousel>
+			</div> -->
 		</div>
 
 		<div

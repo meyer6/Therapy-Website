@@ -1,0 +1,54 @@
+.container {
+    height: fit-content;
+}
+
+.modules-container {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+.module-container {
+    width: 300%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: left 0.5s ease;
+}
+
+.dots-container {
+    position: relative;
+    top: -60px;
+    text-align: center;
+    transition: left 0.3s ease;
+}
+
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin-right: 6px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+  
+.dot:hover {
+    background: #717171;
+}
+
+.arrows-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1344px, 96%)
+}
+.arrows{
+    cursor: pointer;
+    position: relative;
+    transform: translateY(-50%);
+    font-size: 70px;
+    width: fit-content
+}

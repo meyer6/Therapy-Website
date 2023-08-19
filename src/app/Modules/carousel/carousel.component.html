@@ -1,0 +1,55 @@
+<div class="container">
+    <div 
+        class="modules-container"
+        [ngStyle]="{
+            'background': module.backgroundColour,
+        }"
+        #carouselContainer
+    >
+        <div 
+            class="module-container"
+            [style.width]="((module.modules.length) * 100).toString() + '%'"
+            [style.left]="((- currentPosition) * 100).toString() + '%'"
+        >
+            <div
+                *ngFor="let module1 of module.modules; let i = index" 
+                [style.width]="(100 / module.modules.length).toString() + '%'"
+            >
+                <app-module-filterer [module]="module1"></app-module-filterer>
+            </div>
+        </div>
+
+        <div class="dots-container">
+            <div 
+                *ngFor="let module of module.modules; let i = index" 
+                class="dot"
+                [style.background]="i==currentPosition ? colours.font1 : ''"
+                (click)="currentPosition = i"
+            >
+            </div>
+        </div>
+    </div>
+
+    <div 
+        class="arrows-container"
+        [style.top.px]="-carouselContainer.offsetHeight / 2"
+        [style.margin-bottom.px]="-arrowsContainer.offsetHeight"
+        #arrowsContainer
+    >
+        <div 
+            class="arrows"
+            [style.color]="colours.font1"
+            (click)="currentPosition = (currentPosition - 1 + module.modules.length) % module.modules.length"
+        >
+            <i class="fa fa-angle-left"></i>
+        </div>
+
+        <div 
+            class="arrows"
+            [style.color]="colours.font1"
+            (click)="currentPosition = (currentPosition + 1) % module.modules.length"
+        >
+            <i class="fa fa-angle-right"></i>
+        </div>
+    </div>
+</div>

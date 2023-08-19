@@ -1,13 +1,11 @@
 .blur {
     position: fixed;
-    top: -100%;
     left: 0;
     height: 100%;
     width: 100%;
     background: rgb(255, 255, 255);
-    opacity: 0;
-    backdrop-filter: blur(0px);
-    transition: opacity 1s ease, backdrop-filter 1s ease;
+    z-index: 20;
+    transition: opacity 0.75s ease, backdrop-filter 0.75s ease;
 }
 
 .container {
@@ -18,7 +16,8 @@
     width: max(450px, 50%);
     display: flex;
     box-shadow: 0 0 14px 3px rgb(179, 179, 179);
-    transition: top 0.75s;
+    transition: top 0.75s ease;
+    z-index: 20;
 }
 
 .img {

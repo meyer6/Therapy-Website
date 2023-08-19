@@ -8,6 +8,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    z-index: 10;
 }
 
 .logo {
@@ -48,7 +50,6 @@
         top: 0;
         right: 0;
         text-align: right;
-        z-index: 2;
         transition: right 0.3s ease-in-out, background 0.3s;
         padding: 15px 0 15px 15px
     }

@@ -69,7 +69,74 @@ export const site: Array<pageTemplate> = [
                     {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel!', 'fontColour': 'white'}},
                     {...button, ...{content: 'button', redirectURL: 'About-Me', 'centre': true, 'filled': true}},
                 ]
-            }
+            },
+            {
+                type: 'carousel',
+                backgroundColour: colours.background2,
+                modules: [
+                    {
+                        type: 'module2a',
+                        backgroundColour: 'inherit',
+                        imgURL: 'assets/homePage/Img1.jpg',
+                        content: [
+                            {...heading2, ...{content: 'Hello2!'}},
+                            {...heading3, ...{content: 'I\'m Elyssa, a qualified Mindset Coach & certified Hypnotherapist'}},
+                            {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
+                        ]
+                    },
+                    {
+                        type: 'module3a',
+                        backgroundColour: 'inherit',
+                        content1: [
+                            {...heading2, ...{content: 'Hello!'}},
+                        ],
+                        content2:[                
+                            {...heading3, ...{content: 'I\'m Elyssa, a qualified Mindset Coach & certified Hypnotherapist'}},
+                            {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
+                            {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
+                        ],
+                        content3:[
+                            {...heading3, ...{content: 'I\'m Elyssa, a qualified Mindset Coach & certified Hypnotherapist'}},
+                            {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
+                            {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
+                        ]
+                    },            
+                    {
+                        type: 'module3c',
+                        backgroundColour: 'inherit',
+                        content1: [
+                            {...heading2, ...{content: 'Hello!'}},
+                            {...heading3, ...{content: 'I\'m Elyssa, a qualified Mindset Coach & certified Hypnotherapist.'}},
+                            {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
+                            {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
+                        ],
+                        content2:[],
+                        content3:[]
+                    },
+                    {
+                        type: 'module3c',
+                        backgroundColour: 'inherit',
+                        content1: [
+                            {...heading2, ...{content: 'You can achieve gra'}},
+                            {...heading3, ...{content: 'I\'m Elyssa, a qualified Mindset Coach & certified Hypnotherapist.'}},
+                            {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
+                            {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
+                        ],
+                        content2:[],
+                        content3:[]
+                    },
+                    {
+                        type: 'imageModule',
+                        backgroundColour: 'inherit',
+                        imgURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmieZ-kKu6KOGfR2b0gZPEEtPEVuu-pvV4ZQ&usqp=CAU',
+                        content: [
+                            {...normalText, ...{content: '<b>Diploma with the Animas Centre</b>', 'fontColour': 'white', 'fontSize': 20}},
+                            {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel!', 'fontColour': 'white'}},
+                            {...button, ...{content: 'button', redirectURL: 'About-Me', 'centre': true, 'filled': true}},
+                        ]
+                    },
+                ]
+            },
         ]
     },
     {
