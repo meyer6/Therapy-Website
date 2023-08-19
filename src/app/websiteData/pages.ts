@@ -7,6 +7,70 @@ import { colours } from "./colours";
 
 export const site: Array<pageTemplate> = [  
     {
+        url: 'test',
+        modules: [
+            {
+                type: 'module3c',
+                backgroundColour: colours.background1,
+                content1: [
+                    {...heading2, ...{content: 'Hello!'}},
+                    {...heading3, ...{content: 'I\'m Elyssa, a qualified Mindset Coach & certified Hypnotherapist.'}},
+                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I fAt the beginning of 2019, having just changed careers, I found mAt the beginning of 2019, having just changed careers, I found mound myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
+                    {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
+                ],
+                content2:[],
+                content3:[]
+            },
+            {
+                type: 'imageModule',
+                backgroundColour: colours.background1,
+                imgURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmieZ-kKu6KOGfR2b0gZPEEtPEVuu-pvV4ZQ&usqp=CAU',
+                content: [
+                    {...normalText, ...{content: '<b>Diploma with the Animas Centre</b>', 'fontColour': 'white', 'fontSize': 20}},
+                    {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel!', 'fontColour': 'white'}},
+                    {...button, ...{content: 'button', redirectURL: 'About-Me', 'centre': true, 'filled': true}},
+                ]
+            },
+            {
+                type: 'module2a',
+                backgroundColour: colours.background1,
+                imgURL: 'assets/Img1.jpg',
+                content: [
+                    {...heading2, ...{content: 'Hello!'}},
+                    {...heading3, ...{content: 'I\'m Elyssa, a qualified Mindset Coach & certified Hypnotherapist'}},
+                    {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
+                ]
+            },
+            {
+                type: 'module3a',
+                backgroundColour: colours.background2,
+                content1: [
+                    {...heading2, ...{content: 'Hello!'}},
+                ],
+                content2:[                
+                    {...heading3, ...{content: 'I\'m Elyssa, a qualified Mindset Coach & certified Hypnotherapist'}},
+                    {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
+                    {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
+                ],
+                content3:[
+                    {...heading3, ...{content: 'I\'m Elyssa, a qualified Mindset Coach & certified Hypnotherapist'}},
+                    {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
+                    {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
+                ]
+            },
+            {
+                type: 'module3b',
+                backgroundColour: colours.background2,
+                content1:[],
+                content2:[
+                    {...heading3, ...{content: 'I\'m Elyssa, a qualified Mindset Coach & certified Hypnotherapist.'}},
+                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
+                ],
+                content3: [{type: 'contact'}]
+            }
+        ]
+    },
+    {
         url: '',
         modules: [
             {
