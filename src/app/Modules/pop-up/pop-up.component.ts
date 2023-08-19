@@ -4,7 +4,7 @@ import { fontsTemplate } from '../../Interfaces/fonts';
 import { buttonTemplate, textTemplate } from '../../Interfaces/contentTemplates';
 import { fonts } from 'src/app/websiteData/fonts';
 import { colours } from 'src/app/websiteData/colours';
-// import { heading2, normalText } from '../../Interfaces/textDefaults';
+import { popupData } from 'src/app/websiteData/other';
 
 @Component({
     selector: 'app-pop-up',
@@ -15,10 +15,7 @@ export class PopUpComponent {
     colours: colourTemplate = colours;
 	fonts: fontsTemplate = fonts;
 
-	content: Array<textTemplate | buttonTemplate> = [
-		// {...heading2, ...{fontSize: 30, content: 'Newsletter'}},
-		// {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fuleive, every testimonial I read, my heart is so full with happiness'}},
-	]
+	content: Array<textTemplate | buttonTemplate> = popupData
 
 	open: boolean = false;
 	currentScrollPosition: number = 0;

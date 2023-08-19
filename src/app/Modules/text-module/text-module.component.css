@@ -9,12 +9,12 @@
     display: flex;
     justify-content: center;
 }
-.text-container div:first-child{
-    margin-right: 3%
+.margin{
+    margin-right: min(42px, 3%)
 }
 
 .text-container1-inner {
-    width: min(1150px, 85%);
+    width: min(1232px, 88%);
     margin-bottom: 30px;
 }
 .text-container1-inner div:not(:first-child){
@@ -22,7 +22,7 @@
 }
 
 .text-container2-inner {
-    width: min(575px, 42.5%);
+    width: min(595px, 42.5%);
 }
 
 /* .heading {
