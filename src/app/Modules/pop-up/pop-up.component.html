@@ -26,8 +26,8 @@
         <app-content [content]="content"></app-content>
 
         <br>
-        <form>
-            <input class="emailInput" placeholder="Email">
+        <form (submit)="emailSubmit($event, email.value)">
+            <input id="emailInput" placeholder="Email" type="email" #email required >
             <button 
                 type="submit"
                 [style.font-family]="fonts.font3"

@@ -20,7 +20,7 @@
     top: 85px;
     left: 50%;
     transform: translateX(-50%);
-    
+
     width: min(1130px, 88%);
     border-radius: 12px;
 }
@@ -36,6 +36,6 @@
     padding-top: 50px;
     padding-bottom: 50px;
 
-    width: 60%;
+    width: min(770px, 60%);
     margin: auto;
 }

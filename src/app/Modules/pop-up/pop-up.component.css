@@ -46,7 +46,7 @@ i:hover{
     padding: 30px
 }
 
-.emailInput {
+#emailInput {
     width: stretch;
     border: solid 1px rgb(169, 169, 169);
     border-radius: 0px;
@@ -56,7 +56,7 @@ i:hover{
     background: rgb(250, 250, 250);
     font-family: inherit;
 }
-.emailInput:focus {
+#emailInput:focus {
     outline: none;
     height: 22px;
     border: solid 2px rgb(28, 28, 28);

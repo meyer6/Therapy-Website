@@ -35,4 +35,10 @@ export class PopUpComponent {
 		let listener = window.addEventListener("scroll", calculateScroll)
 		
 	}
+
+	emailSubmit(event: Event, email: string){
+		event.preventDefault()
+		this.open = false;
+		console.log(email)
+	}
 }
