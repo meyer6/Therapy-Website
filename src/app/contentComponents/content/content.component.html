@@ -47,7 +47,7 @@
         >
     </div>
 
-    <div *ngIf="item.type == 'video'" class="video-container">
+    <div *ngIf="item.type == 'iframe'" class="video-container">
         <iframe  
             class="video"
             [src]="item.src | safe"

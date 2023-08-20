@@ -148,7 +148,7 @@ export const site: Array<pageTemplate> = [
                 ],
                 content3:[
                     {
-                        type: 'video', 
+                        type: 'iframe', 
                         src: 'https://www.youtube.com/embed/PhDfNC-DvpA',
                         width: '80%'
                     }

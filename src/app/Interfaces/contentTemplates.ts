@@ -27,7 +27,7 @@ export interface imageTemplate {
 }
 
 export interface iFrameTemplate {
-    type: 'video';
+    type: 'iframe';
     src: string;
     width?: string;
 }
