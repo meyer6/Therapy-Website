@@ -30,6 +30,7 @@ export interface iFrameTemplate {
     type: 'iframe';
     src: string;
     width?: string;
+    aspectRatio?: string;
 }
 
 // Custom templates

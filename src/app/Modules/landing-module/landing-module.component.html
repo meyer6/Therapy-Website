@@ -3,11 +3,10 @@
 
     <img 
         [src]="module.backgroundImg" 
-        [ngClass]="'background-img ' + ((windowService.windowWidth >= 800) ? '' : 'mobile-img')"
+        [ngClass]="'background-img ' + ((windowService.windowWidth >= windowService.minWidth) ? '' : 'mobile-img')"
     >
 
-    <div [ngClass]="'text-container ' + ((windowService.windowWidth >= 800) ? '' : 'mobile')">
+    <div [ngClass]="'text-container ' + ((windowService.windowWidth >= windowService.minWidth) ? '' : 'mobile')">
         <app-content [content]="module.content"></app-content>
     </div>
-
 </div>

@@ -53,6 +53,7 @@
             [src]="item.src | safe"
             [style.width]="'max(' + (item.width != null ? item.width : '100%') + ', 400px)'"
             [style.max-width]="'100%'"
+            [style.aspect-ratio]="item.aspectRatio"
             [style.margin-bottom.px]="i == content.length - 1 ? 0 : 30"
             allowFullScreen="true"
         >   

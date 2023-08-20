@@ -150,7 +150,8 @@ export const site: Array<pageTemplate> = [
                     {
                         type: 'iframe', 
                         src: 'https://www.youtube.com/embed/PhDfNC-DvpA',
-                        width: '80%'
+                        width: '80%',
+                        aspectRatio: '16/9'
                     }
                 ]
             },
