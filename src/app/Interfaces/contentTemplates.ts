@@ -26,6 +26,13 @@ export interface imageTemplate {
     borderRadius?: string;
 }
 
+export interface videoTemplate {
+    type: 'video';
+    src: string;
+    height?: string;
+    width?: string;
+}
+
 // Custom templates
 export interface contactPage {
     type: 'contact'

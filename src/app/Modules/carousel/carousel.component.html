@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" (mousedown)="drag($event)" (touchstart)="drag($event)">
     <div 
         class="modules-container"
         [ngStyle]="{
@@ -9,7 +9,8 @@
         <div 
             class="module-container"
             [style.width]="((module.modules.length) * 100).toString() + '%'"
-            [style.left]="((- currentPosition) * 100).toString() + '%'"
+            [style.left]="'calc(' + ((- currentPosition) * 100).toString() + '% + ' + (currentX - startX).toString() + 'px)'"
+            [style.transition]="startX == 0.1 ? '' : 'none'"
         >
             <div
                 *ngFor="let module1 of module.modules; let i = index" 
@@ -31,6 +32,7 @@
     </div>
 
     <div 
+        *ngIf="windowService.windowWidth > windowService.minWidth"
         class="arrows-container"
         [style.top.px]="-carouselContainer.offsetHeight / 2"
         [style.margin-bottom.px]="-arrowsContainer.offsetHeight"

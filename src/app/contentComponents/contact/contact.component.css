@@ -13,7 +13,7 @@
     font-size: 13.5px;
 }
 .inner-inner-container {
-    width: 47%;
+    width: 49%;
     display: block;
 }
 .inner-inner-container p {
@@ -22,7 +22,7 @@
 }
 
 .input {
-    width: 100%;
+    width: calc(100% - 20px);
     border: solid 1px rgb(169, 169, 169);
     border-radius: 0px;
     height: 24px;
@@ -39,7 +39,7 @@
 .input:focus {
     outline: none;
     height: 22px;
-    width: calc(100% - 2px);
+    width: calc(100% - 22px);
     border: solid 2px rgb(28, 28, 28);
 }
 .message:focus {

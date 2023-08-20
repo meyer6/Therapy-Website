@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    transition: left 0.5s ease;
+    transition: left 0.3s ease;
 }
 
 .dots-container {

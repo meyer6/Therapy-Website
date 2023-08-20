@@ -40,7 +40,8 @@
         <img 
             [src]="item.src"
             [style.height]="item.height"
-            [style.width]="item.width"
+            [style.width]="'max(' + item.width + ', 400px)'"
+            [style.max-width]="'100%'"
             [style.max-width]="'100%'"
             [style.border-radius]="item.borderRadius"
             [style.margin-bottom.px]="i == content.length - 1 ? 0 : 30"
