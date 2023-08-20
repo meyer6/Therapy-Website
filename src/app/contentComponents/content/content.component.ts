@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { buttonTemplate, textTemplate, contactPage, imageTemplate } from '../../Interfaces/contentTemplates';
+import { buttonTemplate, textTemplate, contactPage, imageTemplate, iFrameTemplate } from '../../Interfaces/contentTemplates';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
     styleUrls: ['./content.component.css']
 })
 export class ContentComponent {
-	@Input() content: Array<textTemplate | buttonTemplate | imageTemplate | contactPage> = [];
+	@Input() content: Array<textTemplate | buttonTemplate | imageTemplate | iFrameTemplate | contactPage> = [];
 	hover: boolean = false;
 
 	constructor(private router: Router) {}

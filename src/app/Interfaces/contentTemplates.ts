@@ -26,10 +26,9 @@ export interface imageTemplate {
     borderRadius?: string;
 }
 
-export interface videoTemplate {
+export interface iFrameTemplate {
     type: 'video';
     src: string;
-    height?: string;
     width?: string;
 }
 

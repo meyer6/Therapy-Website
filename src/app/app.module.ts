@@ -20,6 +20,7 @@ import { PopUpComponent } from './Modules/pop-up/pop-up.component';
 import { ImageGridComponent } from './Modules/image-grid/image-grid.component';
 import { CarouselComponent } from './Modules/carousel/carousel.component';
 import { ModuleFiltererComponent } from './module-filterer/module-filterer.component';
+import { SafePipe } from './contentComponents/content/safe.pipe';
 
 @NgModule({
     declarations: [
@@ -40,6 +41,7 @@ import { ModuleFiltererComponent } from './module-filterer/module-filterer.compo
         ImageGridComponent,
         CarouselComponent,
         ModuleFiltererComponent,
+        SafePipe,
     ],
     imports: [
         BrowserModule,

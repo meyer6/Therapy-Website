@@ -40,12 +40,23 @@
         <img 
             [src]="item.src"
             [style.height]="item.height"
-            [style.width]="'max(' + item.width + ', 400px)'"
-            [style.max-width]="'100%'"
+            [style.width]="'max(' + (item.width != null ? item.width : '100%') + ', 400px)'"
             [style.max-width]="'100%'"
             [style.border-radius]="item.borderRadius"
             [style.margin-bottom.px]="i == content.length - 1 ? 0 : 30"
         >
+    </div>
+
+    <div *ngIf="item.type == 'video'" class="video-container">
+        <iframe  
+            class="video"
+            [src]="item.src | safe"
+            [style.width]="'max(' + (item.width != null ? item.width : '100%') + ', 400px)'"
+            [style.max-width]="'100%'"
+            [style.margin-bottom.px]="i == content.length - 1 ? 0 : 30"
+            allowFullScreen="true"
+        >   
+        </iframe>
     </div>
 
     <div *ngIf="item.type == 'contact'">

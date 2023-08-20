@@ -19,3 +19,15 @@
 .image-container {
     text-align: center;
 }
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    aspect-ratio: 16/9;
+}

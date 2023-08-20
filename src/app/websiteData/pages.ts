@@ -100,7 +100,7 @@ export const site: Array<pageTemplate> = [
                             {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
                             {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
                         ]
-                    },            
+                    },             
                     {
                         type: 'module3c',
                         backgroundColour: 'inherit',
@@ -135,6 +135,23 @@ export const site: Array<pageTemplate> = [
                             {...button, ...{content: 'button', redirectURL: 'About-Me', 'centre': true, 'filled': true}},
                         ]
                     },
+                ]
+            },
+            {
+                type: 'module3b',
+                backgroundColour: colours.background1,
+                content1: [],
+                content2:[                
+                    {...heading3, ...{content: 'I\'m Elyssa, a qualified Mindset Coach & certified Hypnotherapist'}},
+                    {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
+                    {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
+                ],
+                content3:[
+                    {
+                        type: 'video', 
+                        src: 'https://www.youtube.com/embed/PhDfNC-DvpA',
+                        width: '80%'
+                    }
                 ]
             },
         ]
