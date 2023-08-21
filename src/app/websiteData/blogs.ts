@@ -53,7 +53,7 @@ export const blogs: Array<blogTemplate> = [
     },
     {
         date: '23rd March 2023',
-        imgURL: 'assets/Img1.jpg',
+        imgURL: 'assets/resources/book.jpg',
         title: '6 Common Pricing Mistakes & Free Workbook To Fix Them',
         description: 'oma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind',
         content: [

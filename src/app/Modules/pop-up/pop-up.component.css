@@ -18,6 +18,7 @@
     box-shadow: 0 0 14px 3px rgb(179, 179, 179);
     transition: top 0.75s ease;
     z-index: 20;
+    border-radius: 5px;
 }
 @media (max-width : 480px) {
     .container {
@@ -32,6 +33,7 @@
     width: 40%;
     height: 100%;
     object-fit: cover;
+    border-radius: 5px 0 0 5px;
 }
 
 i {

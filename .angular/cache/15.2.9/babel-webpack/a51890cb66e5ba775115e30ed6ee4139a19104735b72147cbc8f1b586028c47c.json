@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const colours = {\n  background1: \"#ECF4EF\",\n  background2: \"#FFFFFF\",\n  font1: \"#1446A0\",\n  font2: \"#DB3069\",\n  font3: \"#000000\"\n};","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

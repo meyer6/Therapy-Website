@@ -25,7 +25,7 @@ export const site: Array<pageTemplate> = [
                 content1: [
                     {...heading2, ...{content: 'We can help you find the answers to your questions.'}},
                 ],
-                content2:[                
+                content2:[
                     {...heading3, ...{content: 'What is therapy?'}},
                     {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and itâ€™s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
                     {...button, ...{content: 'Read More', redirectURL: 'AboutMe'}},
@@ -36,7 +36,6 @@ export const site: Array<pageTemplate> = [
                     {...button, ...{content: 'Read More', redirectURL: 'AboutMe'}},
                 ]
             }, 
-            
             {
                 type: 'module1b',
                 backgroundColour: colours.background2,
@@ -472,7 +471,7 @@ export const site: Array<pageTemplate> = [
                 backgroundColour: colours.background2,
                 content1:[],
                 content2:[
-                    {...heading3, ...{content: 'I\'m Elyssa, a qualified Mindset Coach & certified Hypnotherapist.'}},
+                    {...heading3, ...{content: 'Contact Me'}},
                     {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didnâ€™t like, feeling so overwhelmed, confused and stuck.'}},
                 ],
                 content3: [{type: 'contact'}]
