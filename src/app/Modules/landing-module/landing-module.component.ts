@@ -8,6 +8,8 @@ import { landingModule } from 'src/app/Interfaces/moduleTemplates';
     styleUrls: ['./landing-module.component.css']
 })
 export class LandingModuleComponent {
+	animate: boolean = false
+
 	@Input() module: landingModule = {
 		type: 'landingModule',
 		backgroundImg: '',
@@ -15,4 +17,8 @@ export class LandingModuleComponent {
 	};
 
 	constructor(public windowService: WindowWidthService) {}
+
+	ngAfterViewInit(){
+		this.animate = true;
+	}
 }

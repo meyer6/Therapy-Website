@@ -1,6 +1,6 @@
-<app-navbar></app-navbar>
 <div *ngFor="let page of site">
 	<div *ngIf="page.url == location.path().replace('/','')">
+		<app-navbar [landingModule]="page.modules[0].type == 'landingModule'"></app-navbar>
 		<div 
 			*ngIf="page.modules[0].type != 'landingModule'" 
 			class="nav-bar-placeholder"
@@ -53,7 +53,7 @@
 		>
 			Read More
 		</div>
+		<app-footer></app-footer>
 	</div>
 </div>
 <app-pop-up></app-pop-up>
-<app-footer></app-footer>

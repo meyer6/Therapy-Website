@@ -1,8 +1,10 @@
 <div 
     class="navbar-container"
-    [ngStyle]="{'background': 'linear-gradient(180deg, '+colours.background1+' 35%,'+ colours.background2+'00 100%)',
+    [ngStyle]="{
+        'background': landingModule && currentScrollPosition < windowHeight ? 'transparent' : 'linear-gradient(180deg, '+colours.background1+' 35%,'+ colours.background2+'00 100%)',
         'top': position + 'px',
-        'transition': 'top ' + (totalUpScroll == 0 ? '0' : '0.3') + 's'
+        'transition': 'top ' + (totalUpScroll == 0 ? '0' : '0.3') + 's',
+        'color': landingModule && currentScrollPosition < windowHeight ? '#FFFFFF' : colours.font1, 
     }"
 >
     <img 
@@ -15,7 +17,6 @@
         class="fa fa-bars" 
         (click)="open = true"
         [ngStyle]="{
-            'color': colours.font1, 
             'margin-right': '40px'
         }"
     ></i>
@@ -23,8 +24,7 @@
     <div 
         class="links"
         [ngStyle]="{
-            'background': open ? colours.background1 : 'transparent',
-            'color': colours.font1, 
+            'background': open ? (landingModule && currentScrollPosition < windowHeight ? 'black' : colours.background1) : 'transparent',
             'font-family': fonts.font2,
             'right': open ? '0' : '-250px'
         }"
@@ -32,7 +32,6 @@
         <i 
             class="fa fa-close" 
             [ngStyle]="{
-                'color': colours.font1, 
                 'margin-right': '40px'
             }"
             (click)="open = false" 

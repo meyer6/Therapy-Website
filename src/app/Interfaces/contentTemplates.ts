@@ -13,9 +13,9 @@ export interface textTemplate {
     content: string;
     fontFamily: string;
     fontColour: string;
-    fontSize: number;
+    fontSize: number | string;
     fontWeight: 'thin' | 'normal' | 'bold';
-    lineHeight: 'normal' | number;
+    lineHeight?: number | string;
 }
 
 export interface imageTemplate {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Location } from "@angular/common";
 import { colourTemplate } from '../../Interfaces/colours';
 import { fontsTemplate } from '../../Interfaces/fonts';
@@ -28,6 +28,9 @@ export class NavbarComponent {
 	open: boolean = false;
 
 	site: Array<pageTemplate> = site
+
+	windowHeight: number = window.innerHeight
+	@Input() landingModule: boolean = false
 
 	constructor(private router: Router, public location: Location) {}
 

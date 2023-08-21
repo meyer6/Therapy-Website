@@ -5,6 +5,8 @@ import { button, heading1, heading2, heading3, normalText, thinText } from "./te
 import { blogPages, blogs } from "./blogs";
 import { colours } from "./colours";
 
+// module1a module1b module2a module2b module3a module3b module3c module3d carousel imageModule
+
 export const site: Array<pageTemplate> = [  
     {
         url: '',
@@ -12,8 +14,9 @@ export const site: Array<pageTemplate> = [
             {
                 type: 'landingModule',
                 backgroundImg: 'assets/homePage/landingPage.jpg',
-                content: [{...heading1, ...{content: 'Luisa Picciuto'}},
-                    {...thinText, ...{content: 'COACHING'}}
+                content: [
+                    {...heading2, ...{content: 'Luisa Picciuto', fontSize: 'max(50px, min(8vw, 130px))', fontColour: 'rgb(237, 232, 229)', fontFamily: 'Maharlika', lineHeight:'min(10vw, min(11vh, 130px))'}},
+                    {...thinText, ...{content: 'Coaching', fontSize: 'max(35px, min(6vw, 80px))', fontColour: 'rgb(237, 232, 229)'}, fontFamily: 'Maharlika', lineHeight:'min(10vw, min(11vh, 130px))'}
                 ]
             },
             {
@@ -22,7 +25,7 @@ export const site: Array<pageTemplate> = [
                 content1: [
                     {...heading2, ...{content: 'Hello!'}},
                     {...heading3, ...{content: 'I\'m Elyssa, a qualified Mindset Coach & certified Hypnotherapist.'}},
-                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
+                    {...normalText, ...{content: 'At the beginning of, having just changed careers, I found myself in a job I didn’t like, feeling so overwhelmed, confused and stuck.'}},
                     {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
                 ],
                 content2:[],

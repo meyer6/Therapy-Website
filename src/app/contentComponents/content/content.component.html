@@ -3,8 +3,10 @@
     <div *ngIf="item.type == 'text'">
         <div 
             [style.font-size.px]="item.fontSize"
+            [style.font-size]="item.fontSize"
             [style.font-family]="item.fontFamily"
             [style.font-weight]="item.fontWeight"
+            [style.line-height]="item.lineHeight"
             [style.line-height.px]="item.lineHeight"
             [style.color]="item.fontColour"
             [style.margin-bottom.px]="i == content.length - 1 ? 0 : 30"

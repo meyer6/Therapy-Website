@@ -19,7 +19,6 @@ export const heading2: textTemplate = {
     fontColour: colours.font1,
     fontSize: 48,
     fontWeight: 'bold',
-    lineHeight: 'normal'
 }
 
 export const heading3: textTemplate = {
@@ -29,7 +28,6 @@ export const heading3: textTemplate = {
     fontColour: colours.font2,
     fontSize: 30,
     fontWeight: 'normal',
-    lineHeight: 'normal'
 }
 
 export const normalText: textTemplate = {
@@ -49,7 +47,6 @@ export const thinText: textTemplate = {
     fontColour: colours.font2,
     fontSize: 25,
     fontWeight: 'thin',
-    lineHeight: 'normal'
 }
 
 export const button: buttonTemplate = {
