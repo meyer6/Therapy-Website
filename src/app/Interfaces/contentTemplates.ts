@@ -16,6 +16,7 @@ export interface textTemplate {
     fontSize: number | string;
     fontWeight: 'thin' | 'normal' | 'bold';
     lineHeight?: number | string;
+    centre?: boolean;
 }
 
 export interface imageTemplate {

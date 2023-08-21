@@ -10,7 +10,7 @@
             [style.line-height.px]="item.lineHeight"
             [style.color]="item.fontColour"
             [style.margin-bottom.px]="i == content.length - 1 ? 0 : 30"
-
+            [style.text-align]="item.centre ? 'center' : 'inherit'"
             [innerHTML]="item.content"
         ></div>    
     </div>

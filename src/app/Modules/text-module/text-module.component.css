@@ -20,7 +20,6 @@
 .text-container1-inner div:not(:first-child){
     margin-top: 30px;
 }
-
 .text-container2-inner {
     width: min(595px, 42.5%);
 }

@@ -120,6 +120,17 @@ export const site: Array<pageTemplate> = [
                 ]
             },
             {
+                type: 'module3d',
+                backgroundColour: colours.background1,
+                content1: [                
+                    {...heading2, ...{content: 'Does this resonate?'}},
+                    {...heading3, ...{content: '"You are here reading this which shows me that you want things to change and that is the first step.'}},
+                    {...button, ...{content: 'Apply to work with me', redirectURL: 'Contact', 'centre': true}},
+                ],
+                content2:[],
+                content3:[]
+            }, 
+            {
                 type: 'carousel',
                 backgroundColour: colours.background2,
                 modules: [
