@@ -23,7 +23,7 @@ export const site: Array<pageTemplate> = [
                 type: 'module3a',
                 backgroundColour: colours.background1,
                 content1: [
-                    {...heading2, ...{content: 'We can help you find the<br> answers to your questions.'}},
+                    {...heading2, ...{content: 'We can help you find the answers to your questions.'}},
                 ],
                 content2:[                
                     {...heading3, ...{content: 'What is therapy?'}},
@@ -281,7 +281,75 @@ export const site: Array<pageTemplate> = [
                 ],
                 content2:[],
                 content3: []
-            }
+            },
+            {
+                type: 'carousel',
+                backgroundColour: colours.background1,
+                modules: [
+                    {
+                        type: 'module3a',
+                        backgroundColour: 'inherit',
+                        content1: [],
+                        content2:[                
+                            {...heading3, ...{content: 'Meyer Louka'}, lineHeight: 0},
+                            {...normalText, ...{content: '"I cant express how grateful I am to have found Louisa. From the moment I walked into their office, I felt a sense of comfort and understanding. Their compassionate nature and deep insight made me feel truly heard and supported. With their guidance, Ive been able to overcome obstacles that once seemed insurmountable. Every session feels like a step forward, and I credit Louisa for helping me rediscover my strength and resilience."'}},
+                            {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
+                        ],
+                        content3:[
+                            {...normalText, ...{content: '"Ive had the privilege of working with Louisa for several months now, and the impact on my life has been incredible. Their ability to create a safe space for self-exploration and growth is unmatched. Louisa listens with empathy and offers thoughtful insights that have given me a fresh perspective on my challenges. With their support, Ive gained valuable tools to manage anxiety and improve my overall well-being. I highly recommend Louisa to anyone seeking a skilled and compassionate therapist." - <b> Jason M. <b>'}},
+                            {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
+                        ]
+                    }, 
+                    {
+                        type: 'module3a',
+                        backgroundColour: 'inherit',
+                        content1: [
+                        ],
+                        content2:[                
+                            {...heading3, ...{content: 'Meyer Louka'}, lineHeight: 0},
+                            {...normalText, ...{content: '"I cant express how grateful I am to have found Louisa. From the moment I walked into their office, I felt a sense of comfort and understanding. Their compassionate nature and deep insight made me feel truly heard and supported. With their guidance, Ive been able to overcome obstacles that once seemed insurmountable. Every session feels like a step forward, and I credit Louisa for helping me rediscover my strength and resilience."'}},
+                            {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
+                        ],
+                        content3:[
+                            {...normalText, ...{content: '"Ive had the privilege of working with Louisa for several months now, and the impact on my life has been incredible. Their ability to create a safe space for self-exploration and growth is unmatched. Louisa listens with empathy and offers thoughtful insights that have given me a fresh perspective on my challenges. With their support, Ive gained valuable tools to manage anxiety and improve my overall well-being. I highly recommend Louisa to anyone seeking a skilled and compassionate therapist." - <b> Jason M. <b>'}},
+                            {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
+                        ]
+                    }, 
+                    {
+                        type: 'module3c',
+                        backgroundColour: 'inherit',
+                        content1: [
+                            {...heading3, ...{content: 'Nishant Moolinti'}},
+                            {...normalText, ...{content: '"I cant thank  Louisa enough for the profound impact theyve had on my life. From the beginning, they took the time to understand my concerns and tailor our sessions to my unique needs. Their gentle guidance and genuine empathy have allowed me to confront deep-rooted issues and make significant progress. Louisa has a gift for helping you see your own potential and guiding you towards self-discovery. Im so grateful to have them as my therapist."'}},
+                            {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
+                        ],
+                        content2:[],
+                        content3:[]
+                    },
+                    {
+                        type: 'module3c',
+                        backgroundColour: 'inherit',
+                        content1: [
+                            {...normalText, ...{content: '"I cant thank Louisa enough for the profound impact theyve had on my life. From the beginning, they took the time to understand my concerns and tailor our sessions to my unique needs. Their gentle guidance and genuine empathy have allowed me to confront deep-rooted issues and make significant progress. Louisa has a gift for helping you see your own potential and guiding you towards self-discovery. Im so grateful to have them as my therapist." <b> - Meyer. L '}},
+                            {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
+                        ],
+                        content2:[],
+                        content3:[]
+                    },
+                ]
+            },
+            {
+                type: 'imageGrid',
+                backgroundColour: colours.background2,
+                images: [
+                    'assets/testimonials/testimonial.png',
+                    'assets/testimonials/testimonial.png',
+                    'assets/testimonials/testimonial.png',
+                    'assets/testimonials/testimonial.png',
+                    'assets/testimonials/testimonial.png',
+                    'assets/testimonials/testimonial.png'
+                ]
+            },
         ]
     },
     {

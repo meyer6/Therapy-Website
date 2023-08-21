@@ -15,7 +15,6 @@
 
 .text-container1-inner {
     width: min(1232px, 88%);
-    margin-bottom: 30px;
 }
 .text-container1-inner div:not(:first-child){
     margin-top: 30px;
