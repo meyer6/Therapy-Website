@@ -25,6 +25,7 @@
         <div 
             class="text-container1-inner" 
             *ngIf="windowService.windowWidth < windowService.minWidth"
+            [style.margin-bottom]="module.type == 'module3c' || 'module3d' ? '0' : ''"
         >
             <div><app-content [content]="module.content1"></app-content></div>
             <div><app-content [content]="module.content2"></app-content></div>
