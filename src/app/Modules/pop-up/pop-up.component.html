@@ -26,16 +26,17 @@
         <app-content [content]="content"></app-content>
 
         <br>
-        <form (submit)="emailSubmit($event, email.value)">
-            <input id="emailInput" placeholder="Email" type="email" #email required >
+        <form>
+            <input id="emailInput" placeholder="Email" type="email" required >
             <button 
                 type="submit"
-                [style.font-family]="fonts.font3"
                 class="submit-button"
+                (click)="emailSubmit()"
+                [style.font-family]="fonts.font3"
             >
                 Subscribe
             </button>
         </form>
     </div>
-
 </div>
+

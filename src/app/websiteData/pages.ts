@@ -5,7 +5,6 @@ import { button, heading1, heading2, heading3, normalText, thinText } from "./te
 import { blogPages, blogs } from "./blogs";
 import { colours } from "./colours";
 
-// module1a module1b module2a module2b module3a module3b module3c module3d carousel imageModule
 const homePage: pageTemplate =     {
     url: '',
     modules: [
@@ -405,7 +404,5 @@ export const site: Array<pageTemplate> = [
     }
 ]
 
-// Mailer lite
-// Resources
-// Testing
 // How to use document
+// Mailer lite

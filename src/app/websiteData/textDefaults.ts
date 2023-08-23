@@ -9,7 +9,6 @@ export const heading1: textTemplate = {
     fontColour: colours.font1,
     fontSize: 70,
     fontWeight: 'bold',
-    lineHeight: 'normal'
 }
 
 export const heading2: textTemplate = {

@@ -36,9 +36,7 @@ export class PopUpComponent {
 		
 	}
 
-	emailSubmit(event: Event, email: string){
-		event.preventDefault()
+	emailSubmit(){
 		this.open = false;
-		console.log(email)
 	}
 }
