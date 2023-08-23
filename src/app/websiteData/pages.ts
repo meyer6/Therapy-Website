@@ -6,82 +6,84 @@ import { blogPages, blogs } from "./blogs";
 import { colours } from "./colours";
 
 // module1a module1b module2a module2b module3a module3b module3c module3d carousel imageModule
+const homePage: pageTemplate =     {
+    url: '',
+    modules: [
+        {
+            type: 'landingModule',
+            backgroundImg: 'assets/homePage/landingPage.jpg',
+            content: [
+                {...heading2, ...{content: 'Luisa Picciuto', fontSize: 'max(50px, min(8vw, 130px))', fontColour: 'rgb(237, 232, 229)', fontFamily: 'Maharlika', lineHeight:'min(10vw, min(11vh, 130px))'}},
+                {...thinText, ...{content: 'Coaching', fontSize: 'max(35px, min(6vw, 80px))', fontColour: 'rgb(237, 232, 229)'}, fontFamily: 'Maharlika', lineHeight:'min(10vw, min(11vh, 130px))'}
+            ]
+        },
+        {
+            type: 'module3a',
+            backgroundColour: colours.background1,
+            content1: [
+                {...heading2, ...{content: 'We can help you find the answers to your questions.'}},
+            ],
+            content2:[
+                {...heading3, ...{content: 'What is therapy?'}},
+                {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and itâ€™s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
+                {...button, ...{content: 'Read More', redirectURL: 'AboutMe'}},
+            ],
+            content3:[
+                {...heading3, ...{content: 'Why you may need a therapist?'}},
+                {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and itâ€™s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
+                {...button, ...{content: 'Read More', redirectURL: 'AboutMe'}},
+            ]
+        }, 
+        {
+            type: 'module1b',
+            backgroundColour: colours.background2,
+            imgURL: 'assets/homePage/woman-in-white-looking-up.jpg',
+            content: [
+                {...heading2, ...{content: 'Hello!'}},
+                {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and itâ€™s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b> '}},
+                {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
+            ]
+        },
+        {
+            type: 'module3c',
+            backgroundColour: colours.background1,
+            content1: [
+                {...heading3, ...{content: 'Why choose me as a therapist?'}},
+                {...normalText, ...{content: 'Finding the right therapist is a significant step towards your journey of healing, growth, and personal transformation. I understand that this decision is not taken lightly, and I am here to assure you that you are in safe and capable hands.'}},
+                {...normalText, ...{content: '<b>1. Professional Expertise:</b> <br> With [X] years of experience in the field of therapy, I bring a wealth of knowledge and expertise to our sessions. My academic background, continuous training, and commitment to staying updated with the latest therapeutic approaches ensure that you receive the highest quality care.'}},
+                {...normalText, ...{content: '<b>2. Empathetic and Non-Judgmental Space:</b> <br>Creating a safe, empathetic, and non-judgmental environment is at the core of my practice. I value your unique experiences, perspectives, and emotions. You can openly express yourself without fear of criticism, and together, we will work towards your well-being.'}},
+                {...normalText, ...{content: '<b>3. Tailored Approach: </b> <br> I understand that each individuals journey is unique. My therapeutic approach is not one-size-fits-all. I take the time to understand your specific needs, goals, and challenges, allowing us to collaboratively develop a personalized treatment plan that resonates with you.'}},
+                {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
+            ],
+            content2:[],
+            content3:[]
+        },
+        {
+            type: 'module1a',
+            backgroundColour: colours.background2,
+            imgURL: 'assets/homePage/Img1.jpg',
+            content: [
+                {...heading2, ...{content: 'Hello!'}},
+                {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and itâ€™s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
+                {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
+            ]
+        },
+        {
+            type: 'imageModule',
+            backgroundColour: colours.background2,
+            imgURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmieZ-kKu6KOGfR2b0gZPEEtPEVuu-pvV4ZQ&usqp=CAU',
+            content: [
+                {...normalText, ...{content: '<b>Diploma with the Animas Centre</b>', 'fontColour': 'white', 'fontSize': 20}},
+                {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and itâ€™s hard to describe how proud and fulfilled I feel!', 'fontColour': 'white'}},
+                {...button, ...{content: 'button', redirectURL: 'About-Me', 'centre': true, 'filled': true}},
+            ]
+        },
+    ]
+}
 
 export const site: Array<pageTemplate> = [  
-    {
-        url: '',
-        modules: [
-            {
-                type: 'landingModule',
-                backgroundImg: 'assets/homePage/landingPage.jpg',
-                content: [
-                    {...heading2, ...{content: 'Luisa Picciuto', fontSize: 'max(50px, min(8vw, 130px))', fontColour: 'rgb(237, 232, 229)', fontFamily: 'Maharlika', lineHeight:'min(10vw, min(11vh, 130px))'}},
-                    {...thinText, ...{content: 'Coaching', fontSize: 'max(35px, min(6vw, 80px))', fontColour: 'rgb(237, 232, 229)'}, fontFamily: 'Maharlika', lineHeight:'min(10vw, min(11vh, 130px))'}
-                ]
-            },
-            {
-                type: 'module3a',
-                backgroundColour: colours.background1,
-                content1: [
-                    {...heading2, ...{content: 'We can help you find the answers to your questions.'}},
-                ],
-                content2:[
-                    {...heading3, ...{content: 'What is therapy?'}},
-                    {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and itâ€™s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
-                    {...button, ...{content: 'Read More', redirectURL: 'AboutMe'}},
-                ],
-                content3:[
-                    {...heading3, ...{content: 'Why you may need a therapist?'}},
-                    {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and itâ€™s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
-                    {...button, ...{content: 'Read More', redirectURL: 'AboutMe'}},
-                ]
-            }, 
-            {
-                type: 'module1b',
-                backgroundColour: colours.background2,
-                imgURL: 'assets/homePage/woman-in-white-looking-up.jpg',
-                content: [
-                    {...heading2, ...{content: 'Hello!'}},
-                    {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and itâ€™s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b> '}},
-                    {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
-                ]
-            },
-            {
-                type: 'module3c',
-                backgroundColour: colours.background1,
-                content1: [
-                    {...heading3, ...{content: 'Why choose me as a therapist?'}},
-                    {...normalText, ...{content: 'Finding the right therapist is a significant step towards your journey of healing, growth, and personal transformation. I understand that this decision is not taken lightly, and I am here to assure you that you are in safe and capable hands.'}},
-                    {...normalText, ...{content: '<b>1. Professional Expertise:</b> <br> With [X] years of experience in the field of therapy, I bring a wealth of knowledge and expertise to our sessions. My academic background, continuous training, and commitment to staying updated with the latest therapeutic approaches ensure that you receive the highest quality care.'}},
-                    {...normalText, ...{content: '<b>2. Empathetic and Non-Judgmental Space:</b> <br>Creating a safe, empathetic, and non-judgmental environment is at the core of my practice. I value your unique experiences, perspectives, and emotions. You can openly express yourself without fear of criticism, and together, we will work towards your well-being.'}},
-                    {...normalText, ...{content: '<b>3. Tailored Approach: </b> <br> I understand that each individuals journey is unique. My therapeutic approach is not one-size-fits-all. I take the time to understand your specific needs, goals, and challenges, allowing us to collaboratively develop a personalized treatment plan that resonates with you.'}},
-                    {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
-                ],
-                content2:[],
-                content3:[]
-            },
-            {
-                type: 'module1a',
-                backgroundColour: colours.background2,
-                imgURL: 'assets/homePage/Img1.jpg',
-                content: [
-                    {...heading2, ...{content: 'Hello!'}},
-                    {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and itâ€™s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
-                    {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
-                ]
-            },
-            {
-                type: 'imageModule',
-                backgroundColour: colours.background2,
-                imgURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmieZ-kKu6KOGfR2b0gZPEEtPEVuu-pvV4ZQ&usqp=CAU',
-                content: [
-                    {...normalText, ...{content: '<b>Diploma with the Animas Centre</b>', 'fontColour': 'white', 'fontSize': 20}},
-                    {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and itâ€™s hard to describe how proud and fulfilled I feel!', 'fontColour': 'white'}},
-                    {...button, ...{content: 'button', redirectURL: 'About-Me', 'centre': true, 'filled': true}},
-                ]
-            },
-        ]
-    },
+    homePage,
+    {...homePage, url: 'Home'},
     {
         url: 'About-Me',
         modules: [
@@ -359,10 +361,12 @@ export const site: Array<pageTemplate> = [
                 backgroundColour: i % 2 == 0? colours.background2 : colours.background1,
                 imgURL: blog.imgURL,
                 content: [
+                    // ... Change the following to change what the list of blog pages will look like
                     {...heading1, ...{fontSize: 25, content: blog.title}},
                     {...normalText, ...{fontWeight: 'bold', content: blog.date}},
                     {...normalText, ...{content: blog.description}},
                     {...button, ...{content: 'Read More', redirectURL: 'Blog#' + i.toString()}},
+                    // ...
                 ]
             }
         })
@@ -479,3 +483,9 @@ export const site: Array<pageTemplate> = [
         ]
     }
 ]
+
+// Mailer lite
+// Resources
+// Comments
+// Testing
+// How to use document

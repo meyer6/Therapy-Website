@@ -18,6 +18,7 @@ export class LandingModuleComponent {
 
 	constructor(public windowService: WindowWidthService) {}
 
+	// Starts the text moving up animation
 	ngAfterViewInit(){
 		this.animate = true;
 	}

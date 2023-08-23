@@ -10,6 +10,7 @@ export const socialUrls: socialUrlsTemplate = {
     linkedin: 'https://www.instagram.com/'
 }
 
+// Stores the content which will be displayed on the popup
 export const popupData: Array<textTemplate | buttonTemplate> = [
     {...heading2, ...{fontSize: 30, content: 'Newsletter'}},
     {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and it’s hard to describe how proud and fuleive, every testimonial I read, my heart is so full with happiness'}},

@@ -9,7 +9,7 @@ import { carouselModule, imageAndTextModule, imagesModule, landingModule, textMo
 export class ModuleFiltererComponent {
     @Input() module: imageAndTextModule | textModule | imagesModule | landingModule | carouselModule = {
         type: 'carousel',
-            backgroundColour: '',
+        backgroundColour: '',
         modules: []
 	}
 }

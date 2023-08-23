@@ -2,7 +2,7 @@
     class="navbar-container"
     [ngStyle]="{
         'background': landingModule && currentScrollPosition < windowHeight ? 'transparent' : 'linear-gradient(180deg, '+colours.background1+' 35%,'+ colours.background2+'00 100%)',
-        'top': position + 'px',
+        'top': navBarPosition + 'px',
         'transition': 'top ' + (totalUpScroll == 0 ? '0' : '0.3') + 's',
         'color': landingModule && currentScrollPosition < windowHeight ? '#FFFFFF' : colours.font1, 
     }"

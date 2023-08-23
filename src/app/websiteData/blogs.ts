@@ -231,6 +231,7 @@ export const blogs: Array<blogTemplate> = [
     },
 ]
 
+// Creates pages for the blogs and formats them
 export const blogPages: Array<pageTemplate> = blogs.map((blog: blogTemplate, i: number) : pageTemplate => {
     return {
         url: 'Blog%23' + i.toString(),
@@ -239,8 +240,11 @@ export const blogPages: Array<pageTemplate> = blogs.map((blog: blogTemplate, i: 
                 type: 'module3c',
                 backgroundColour: '#FFFFFF',
                 content1: [
+                    // ... Change these to change how the blog pages will look
                     {...heading2, ...{content: blog.title}},
                     {...normalText, ...{fontWeight: 'bold', content: blog.date}},
+                    // ...
+
                     ...blog.content
                 ],
                 content2: [],

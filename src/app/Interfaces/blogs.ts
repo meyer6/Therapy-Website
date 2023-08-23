@@ -1,6 +1,4 @@
-import { pageTemplate } from './pageTemplate';
 import { buttonTemplate, imageTemplate, textTemplate, iFrameTemplate } from "./contentTemplates";
-import { heading1, heading2, heading3, normalText, thinText, button } from '../websiteData/textDefaults';
 
 export interface blogTemplate {
     title: string;

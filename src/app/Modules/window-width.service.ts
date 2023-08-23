@@ -8,6 +8,7 @@ export class WindowWidthService {
 	minWidth: number = 800
 
     constructor() { 
+        // Updates the width of the window
         window.addEventListener('resize', () => {
 			this.windowWidth = window.innerWidth
     	})

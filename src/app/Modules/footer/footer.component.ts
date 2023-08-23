@@ -26,8 +26,11 @@ export class FooterComponent {
 
 	constructor(private router: Router, public windowService: WindowWidthService) {}
 
-
-    navigate(route: string) {
+	
+	// Navigates to the desired url
+	navigate(route: string){
+		
+		// Determines if link goes to different website or our one
 		if(route.slice(0, 4) == 'http'){
   			window.open(route, '_blank');
 		}else{

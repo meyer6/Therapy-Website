@@ -42,7 +42,7 @@
     display: none;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
     .links {
         position: fixed;
         height: fit-content;

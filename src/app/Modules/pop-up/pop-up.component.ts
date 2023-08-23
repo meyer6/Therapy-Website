@@ -26,6 +26,7 @@ export class PopUpComponent {
 			this.totalScroll += Math.abs(this.currentScrollPosition - window.scrollY)
 			this.currentScrollPosition = window.scrollY
 
+			// If user has scrolled more than 10,000px then the popup will appear
 			if(this.totalScroll > 10000){
 				this.open = true;
 				window.removeEventListener("scroll", calculateScroll)
