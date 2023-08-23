@@ -216,7 +216,6 @@ export const site: Array<pageTemplate> = [
                     {...button, ...{content: 'button', redirectURL: 'AboutMe'}},
                 ],
                 content3:[
-              
                     {...heading3, ...{content: 'Neurodiversity Training'}, lineHeight: 0},
                     {...normalText, ...{content: 'Welcome to the realm of neurodiversity, a concept that celebrates the natural variation in human cognitive and neurological functioning. Embracing neurodiversity means acknowledging that differences in conditions like autism, ADHD, and dyslexia are simply part of the rich tapestry of human experiences.'}},
                     {...normalText, ...{content: 'Neurodiversity challenges the notion of a single "normal" and highlights the strengths, talents, and unique viewpoints that neurodiverse individuals offer. This movement shifts our focus from deficits to potentials, creating a more inclusive society where everyones contributions are valued.'}},
@@ -376,95 +375,17 @@ export const site: Array<pageTemplate> = [
         url: 'Resources',
         modules: [
             {
-                type: 'module3a',
+                type: 'module3c',
                 backgroundColour: colours.background2,
-                content1:[{...heading2, ...{content: 'Resources'}}],
-                content2:[
-                    {...heading3, ...{content: 'Book'}},
-                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didnâ€™t like, feeling so overwhelmed, confused and stuck.'}},
-                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
+                content1:[
+                    {...heading2, ...{content: 'Resources'}},
+                    {...heading3, ...{content: 'Click here to get more resources'}},
+                    {...normalText, ...{content: 'Welcome to the realm of neurodiversity, a concept that celebrates the natural variation in human cognitive and neurological functioning. Embracing neurodiversity means acknowledging that differences in conditions like autism, ADHD, and dyslexia are simply part of the rich tapestry of human experiences.'}},
+                    {...button, ...{content: 'Resources', redirectURL: 'Resources'}},
                 ],
-                content3: [
-                    {...heading3, ...{content: 'Book'}},
-                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didnâ€™t like, feeling so overwhelmed, confused and stuck.'}},
-                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
-                ]
-            },
-            {
-                type: 'module3b',
-                backgroundColour: colours.background1,
-                content1:[],
-                content2:[
-                    {...heading3, ...{content: 'Book'}},
-                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didnâ€™t like, feeling so overwhelmed, confused and stuck.'}},
-                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
-                ],
-                content3: [
-                    {...heading3, ...{content: 'Book'}},
-                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didnâ€™t like, feeling so overwhelmed, confused and stuck.'}},
-                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
-                ]
-            },
-            {
-                type: 'module3b',
-                backgroundColour: colours.background2,
-                content1:[],
-                content2:[
-                    {...heading3, ...{content: 'Book'}},
-                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didnâ€™t like, feeling so overwhelmed, confused and stuck.'}},
-                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
-                ],
-                content3: [
-                    {...heading3, ...{content: 'Book'}},
-                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didnâ€™t like, feeling so overwhelmed, confused and stuck.'}},
-                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
-                ]
-            },
-            {
-                type: 'module3b',
-                backgroundColour: colours.background1,
-                content1:[],
-                content2:[
-                    {...heading3, ...{content: 'Book'}},
-                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didnâ€™t like, feeling so overwhelmed, confused and stuck.'}},
-                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
-                ],
-                content3: [
-                    {...heading3, ...{content: 'Book'}},
-                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didnâ€™t like, feeling so overwhelmed, confused and stuck.'}},
-                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
-                ]
-            },
-            {
-                type: 'module3b',
-                backgroundColour: colours.background2,
-                content1:[],
-                content2:[
-                    {...heading3, ...{content: 'Book'}},
-                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didnâ€™t like, feeling so overwhelmed, confused and stuck.'}},
-                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
-                ],
-                content3: [
-                    {...heading3, ...{content: 'Book'}},
-                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didnâ€™t like, feeling so overwhelmed, confused and stuck.'}},
-                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
-                ]
-            },
-            {
-                type: 'module3b',
-                backgroundColour: colours.background1,
-                content1:[],
-                content2:[
-                    {...heading3, ...{content: 'Book'}},
-                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didnâ€™t like, feeling so overwhelmed, confused and stuck.'}},
-                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
-                ],
-                content3: [
-                    {...heading3, ...{content: 'Book'}},
-                    {...normalText, ...{content: 'At the beginning of 2019, having just changed careers, I found myself in a job I didnâ€™t like, feeling so overwhelmed, confused and stuck.'}},
-                    {...button, ...{content: 'Download', redirectURL: 'https://bit.ly/2LA8jnA '}},
-                ]
-            },
+                content2:[],
+                content3: []
+            }
         ]
     },
     {
@@ -486,6 +407,5 @@ export const site: Array<pageTemplate> = [
 
 // Mailer lite
 // Resources
-// Comments
 // Testing
 // How to use document
