@@ -29,7 +29,7 @@ const homePage: pageTemplate =     {
             ],
             content3:[
                 {...heading3, ...{content: 'Why you may need a therapist?'}},
-                {...normalText, ...{content: 'Diploma with the Animas Centre for Coaching. In April 2022 I went full time with my Coaching and Hypnotherapy business and itâ€™s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
+                {...normalText, ...{content: 'XXXXXXXXXXXX full time with my Coaching and Hypnotherapy business and itâ€™s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
                 {...button, ...{content: 'Read More', redirectURL: 'AboutMe'}},
             ]
         }, 
