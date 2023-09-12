@@ -24,7 +24,7 @@ const homePage: pageTemplate =     {
             ],
             content2:[
                 {...heading3, ...{content: 'What is therapy?'}},
-                {...normalText, ...{content: '. In April 2022 I went full time with my Coaching and Hypnotherapy business and itâ€™s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
+                {...normalText, ...{content: 'Coaching and Hypnotherapy business and itâ€™s hard to describe how proud and fulfilled I feel! <br><br> Every client I have, every comment on social media I receive, every testimonial I read, my heart is so full with happiness, <b>seeing people achieve their dreams, feel happier and not let their mind limit them.</b>'}},
                 {...button, ...{content: 'Read More', redirectURL: 'AboutMe'}},
             ],
             content3:[
