@@ -12,7 +12,7 @@ const homePage: pageTemplate =     {
             type: 'landingModule',
             backgroundImg: 'assets/homePage/landingPage.jpg',
             content: [
-                {...heading2, ...{content: 'Luisa Picciuto is here!!!!!', fontSize: 'max(50px, min(8vw, 130px))', fontColour: 'rgb(237, 232, 229)', fontFamily: 'Maharlika', lineHeight:'min(10vw, min(11vh, 130px))'}},
+                {...heading2, ...{content: 'Luisa Picciuto is here!!!!!!!', fontSize: 'max(50px, min(8vw, 130px))', fontColour: 'rgb(237, 232, 229)', fontFamily: 'Maharlika', lineHeight:'min(10vw, min(11vh, 130px))'}},
                 {...thinText, ...{content: 'Coaching', fontSize: 'max(35px, min(6vw, 80px))', fontColour: 'rgb(237, 232, 229)'}, fontFamily: 'Maharlika', lineHeight:'min(10vw, min(11vh, 130px))'}
             ]
         },
